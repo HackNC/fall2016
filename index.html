@@ -12,42 +12,60 @@
 	    <link rel="stylesheet" href="css/bootstrap.min.css">
 	    <script src="js/index.js"></script>
 
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+
 	</head>
-	<body>
+	<body class="hacknc-body">
 
         <div class="front-layer">
 
-            <div class="header-container">
+            <div id="header-container">
 
-        		<div class="jumbotron">
+        		<div class="apply">
         			<!-- Insert cover image w/ logo -->
                     <!-- This might not work.  Bootstrap jumbotrons don't have the parallax feature we need. -->
                     <!-- We still need something like this so I'm leaving it for now -->
-                    <form action="apply.html">
+                    <form action="apply.html" >
                         <button>
-                            <h2>APPLY NOW!!!</h2>
+                            <h2>Apply Now</h2>
                         </button>
                     </form>
         		</div>
 
             </div>
 
-            <div class="body-container row">
+            <div class="body-container container">
 
         		<!-- Do we want columns? -->
                 <!-- There should be an outer div here to take up the page width.  Then an innter div with the main content. -->
 
         		<div class="mission-statment fullwidth row">
 
-        			<p></p>
+        			<div class="col-sm-4" id="mission-statment-ram">
+                        <img src="images/ram-animated-256px.gif" class="centered ram-sprite">
+                    </div>
+
+                    <div class="col-md-8">
+                        <h2>hack_nc_2016</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
 
         		</div>
 
-        		<div class="Buttons">
+        		<div class="buttons row">
 
-        			<a href="./faq.html"><button type="button">FAQ</button></a>
-        			<a href="./about.html"><button type="button">About HackNC</button></a>
-        			<a href="./schedule.html"><button type="button">Schedule</button><a>
+                    <div class="col-sm-2 col-sm-offset-2"
+        			    <a href="./faq.html"><button type="button">FAQ</button></a>
+                    </div>
+                    
+        			<div class="col-sm-2 col-sm-offset-1">
+                        <a href="./about.html"><button type="button">About HackNC</button></a>
+                    </div>
+
+                    <div class="col-sm-2 col-sm-offset-1">
+        			    <a href="./schedule.html"><button type="button">Schedule</button></a>
+                    </div>
 
         		</div>
 

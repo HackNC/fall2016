@@ -1,3 +1,71 @@
+.hacknc-body {
+    background-color: black;
+}
+
+#header-container {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 600px;
+}
+.apply {
+    width: 100%;
+    padding-top: 280px;
+}
+.apply form {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.apply button {
+    width: 100%
+}
+
 .mission-statment {
-    
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+.mission-statment p {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+.mission-statment h2 {
+    margin-top: 30px;
+    font-family: 'PT Mono';
+}
+.buttons {
+    margin-top:40px;
+}
+.buttons a{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+}
+.buttons button {
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+}
+
+/* Sections based on screen size*/
+@media (min-width: 768px){
+
+    /*Override Bootstrap*/
+    #mission-statment-ram {
+        width: 300px;
+    }
+}
+@media (min-width: 1170px){
+
+}
+
+.black {
+    background-color: black;
+}
+
+img.centered {
+    margin-right: auto;
+    margin-left: auto;
+    display:block;
 }
