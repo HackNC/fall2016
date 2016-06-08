@@ -6,7 +6,7 @@
     image-rendering: pixelated;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center top; 
     width:100%;
 }
 .apply {
@@ -69,6 +69,15 @@
 .mobile-app p {
     margin-bottom: 30px;
 }
+.map-container {
+    margin-top: 100px;
+    width:100%;
+    height:350px;
+}
+#map {
+    width:100%;
+    height:100%;
+}
 /* Sections based on screen size*/
 @media (min-width: 0px){
     #header-container {
@@ -87,10 +96,10 @@
 }
 @media (min-width: 1170px){
     #header-container {
-        height: 800px;
+        height: 850px;
     }
 }
-@media (min-width: 1700px){
+@media (min-width: 1900px){
     #header-container {
         height: 1100px;
     }
