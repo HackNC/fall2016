@@ -22,18 +22,24 @@
     width: 100%
 }
 
-.mission-statment {
-    margin-top: 20px;
+.subsection {
     color: #FFFFFF;
 }
-.mission-statment p {
+.subsection p {
     margin-top: 20px;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    line-height: 1.9em;  
 }
-.mission-statment h2 {
+
+.subsection h2 {
     margin-top: 30px;
-    font-family: 'PT Mono';
+    font-family: 'Sigmar One', cursive;
 }
+
+.mission-statment {
+    margin-top: 20px;
+}
+
 .buttons {
     margin-top:40px;
 }
@@ -44,10 +50,24 @@
 }
 .buttons button {
     margin: 0 auto;
-    width: 150px;
-    height: 40px;
+    width: 100%;
+    min-width: 150px;
+    height: 60px;
+    font-family: 'Sigmar One', cursive;
+    font-size: 1.6em;
+    margin: 10px auto;
 }
-
+.mobile-app .phone {
+    margin-top: 60px;
+    width: 150px;
+    height: 300px;
+}
+.mobile-app h2 {
+    margin-top: 100px;
+}
+.mobile-app p {
+    margin-bottom: 30px;
+}
 /* Sections based on screen size*/
 @media (min-width: 768px){
 
