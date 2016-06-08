@@ -1,19 +1,20 @@
 .hacknc-body {
     background-color: black;
 }
-
 #header-container {
-    background-image: url("../images/bg.jpg");
+    background-image: url("../images/bg.png");
+    image-rendering: pixelated;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center; 
     width:100%;
-    height: 600px;
 }
 .apply {
     width: 100%;
     padding-top: 280px;
 }
 .apply form {
+    display: none;
     width: 250px;
     margin-left: auto;
     margin-right: auto;
@@ -69,15 +70,30 @@
     margin-bottom: 30px;
 }
 /* Sections based on screen size*/
+@media (min-width: 0px){
+    #header-container {
+        height: 400px;
+    }
+}
 @media (min-width: 768px){
 
     /*Override Bootstrap*/
     #mission-statment-ram {
         width: 300px;
     }
+    #header-container {
+        height: 600px;
+    }
 }
 @media (min-width: 1170px){
-
+    #header-container {
+        height: 800px;
+    }
+}
+@media (min-width: 1700px){
+    #header-container {
+        height: 1100px;
+    }
 }
 
 .black {
