@@ -2,7 +2,7 @@
     background-color: black;
 }
 #header-container {
-    background-image: url("../images/bg.png");
+    background-image: url("../images/landing/layer1.png");
     image-rendering: pixelated;
     background-size: cover;
     background-repeat: no-repeat;
