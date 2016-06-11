@@ -1,9 +1,11 @@
 .hacknc-body {
     background-color: black;
 }
+.parallax-mirror{
+    image-rendering: pixelated;
+}
 #header-container {
     background-image: url("../images/landing/layer1.png");
-    image-rendering: pixelated;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top; 
