@@ -2,12 +2,30 @@
     background-color: black;
 }
 .parallax-mirror{
-    image-rendering: pixelated;
+  /* Webkit color separated image looks best with pixelated, but others look best with auto. */
+  image-rendering: pixelated;
+  /* Opera */
+  image-rendering: -o-crisp-edges;
+  /* Best on Firefox and Safari, put this on bottom, webkit will ignore. */
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  /* IE */
+  -ms-interpolation-mode: nearest-neighbor;
+}
+.parallax {
+  /* Webkit color separated image looks best with pixelated, but others look best with auto. */
+  image-rendering: pixelated;
+  /* Opera */
+  image-rendering: -o-crisp-edges;
+  /* Best on Firefox and Safari, put this on bottom, webkit will ignore. */
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  /* IE */
+  -ms-interpolation-mode: nearest-neighbor;
 }
 #header-container {
     background-image: url("../images/landing/layer1.png");
     background-size: cover;
-    image-rendering: pixelated;
     background-repeat: no-repeat;
     background-position: center top; 
     width:100%;
