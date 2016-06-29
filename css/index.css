@@ -1,5 +1,11 @@
+/*Fonts*/
+@font-face {
+  font-family: 'geo-sans-light';
+  src: url("../fonts/geo_sans_light/GeosansLight.ttf");
+}
+
 .hacknc-body {
-    background-color: black;
+    background-color: #2C2C31;
 }
 .parallax-mirror{
   /* Webkit color separated image looks best with pixelated, but others look best with auto. */
@@ -22,6 +28,8 @@
   image-rendering: crisp-edges;
   /* IE */
   -ms-interpolation-mode: nearest-neighbor;
+  /*background-image: url("../images/landing/old/bg-gradient.png");
+  z-index: -200;*/
 }
 #header-container {
     background-image: url("../images/landing/layer1.png");
@@ -32,16 +40,20 @@
 }
 .apply {
     width: 100%;
-    padding-top: 280px;
+    position: fixed;
 }
 .apply form {
-    display: none;
+    display: block;
     width: 250px;
     margin-left: auto;
     margin-right: auto;
 }
 .apply button {
-    width: 100%
+    width: 100%;
+    background-color:#ffd600;
+    color: #FFFFFF;
+    font-family: 'geo-sans-light', sans-serif;
+    font-size: 40px;
 }
 
 .subsection {
@@ -114,15 +126,24 @@
     #header-container {
         height: 600px;
     }
+    .apply {
+        padding-top: 280px;
+    }
 }
 @media (min-width: 1170px){
     #header-container {
         height: 850px;
     }
+    .apply {
+         padding-top: 350px;
+    }
 }
 @media (min-width: 1900px){
     #header-container {
         height: 1100px;
+    }
+    .apply {
+        padding-top: 500px;
     }
 }
 

@@ -1,6 +1,15 @@
 function init(){
     //Entry point of this JS file
     mapinit();
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 200){
+            $("#apply").hide();
+        } else {
+            $("#apply").show();
+        }
+
+        $("#apply").css("opacity", Math.abs(1 - ($(window).scrollTop() / 200)));
+    });
 }
 function mapinit(){
     // When the window has finished loading create our google map below
