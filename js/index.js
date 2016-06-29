@@ -2,13 +2,14 @@ function init(){
     //Entry point of this JS file
     mapinit();
     $(window).scroll(function(){
-        if ($(window).scrollTop() > 200){
-            $("#apply").hide();
+        button = $(".apply")
+        if ($(window).scrollTop() > 250){
+            button.css("display", "none");
         } else {
-            $("#apply").show();
+            button.css("display", "inline-block");
         }
 
-        $("#apply").css("opacity", Math.abs(1 - ($(window).scrollTop() / 200)));
+        button.css("opacity", Math.abs(1 - ($(window).scrollTop() / 250)));
     });
 }
 function mapinit(){
