@@ -1,6 +1,16 @@
 function init(){
     //Entry point of this JS file
     mapinit();
+    $(window).scroll(function(){
+        button = $(".apply")
+        if ($(window).scrollTop() > 250){
+            button.css("display", "none");
+        } else {
+            button.css("display", "inline-block");
+        }
+
+        button.css("opacity", Math.abs(1 - ($(window).scrollTop() / 250)));
+    });
 }
 function mapinit(){
     // When the window has finished loading create our google map below
