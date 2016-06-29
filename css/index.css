@@ -31,13 +31,22 @@
   /*background-image: url("../images/landing/old/bg-gradient.png");
   z-index: -200;*/
 }
+.mobile-no-parallax {
+  image-rendering: pixelated;
+  background-image: url("../images/flattened.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;   
+  width:100%;
+  margin-bottom: 20px;
+}
 #header-container {
-    background-image: url("../images/landing/layer1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top; 
-    width:100%;
-    margin-bottom: 20px;
+  background-image: url("../images/landing/layer1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top; 
+  width:100%;
+  margin-bottom: 20px;
 }
 .apply {
     width: 100%;
@@ -157,7 +166,18 @@
     #header-container {
         height: 400px;
     }
+    .apply {
+      padding-top: 220px;
+      position: relative;
+    }
     .phone {
+      display: none;
+    }
+    .mobile-no-parallax {
+      display: block;
+      height: 500px;
+    }
+    .parallax {
       display: none;
     }
 }
@@ -172,9 +192,16 @@
     }
     .apply {
         padding-top: 260px;
+        position: fixed;
     }
     .phone {
       display: inline-block;
+    }
+    .mobile-no-parallax {
+      display: none;
+    }
+    .parallax {
+      display: block;
     }
 }
 @media (min-width: 1170px){
