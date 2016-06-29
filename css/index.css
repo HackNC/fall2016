@@ -110,7 +110,7 @@
 }
 
 .buttons {
-
+  margin-top: 20px;
 }
 .buttons a{
     display:block;
@@ -129,6 +129,7 @@
     border: 0px; 
     transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
+    margin-top: 15px;
 }
 .buttons button:hover {
     color: #3F6185;
@@ -156,6 +157,9 @@
     #header-container {
         height: 400px;
     }
+    .phone {
+      display: none;
+    }
 }
 @media (min-width: 768px){
 
@@ -167,7 +171,10 @@
         height: 600px;
     }
     .apply {
-        padding-top: 250px;
+        padding-top: 260px;
+    }
+    .phone {
+      display: inline-block;
     }
 }
 @media (min-width: 1170px){
@@ -175,7 +182,7 @@
         height: 850px;
     }
     .apply {
-         padding-top: 320px;
+         padding-top: 340px;
     }
 }
 @media (min-width: 1900px){
