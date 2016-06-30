@@ -1,15 +1,17 @@
 function init(){
     //Entry point of this JS file
+    window.isMobile = window.innerWidth < 768;
     mapinit();
     $(window).scroll(function(){
-        button = $(".apply")
-        if ($(window).scrollTop() > 250){
-            button.css("display", "none");
-        } else {
-            button.css("display", "inline-block");
+        if (!isMobile){
+            button = $(".apply");
+            button.css("opacity", Math.abs(1 - ($(window).scrollTop() / 250)));
+            if ($(window).scrollTop() > 250){
+                button.css("display", "none");
+            } else {
+                button.css("display", "inline-block");
+            }
         }
-
-        button.css("opacity", Math.abs(1 - ($(window).scrollTop() / 250)));
     });
 }
 function mapinit(){
@@ -30,7 +32,7 @@ function mapinit(){
 
             // How you would like to style the map. 
             // This is where you would paste any style found on Snazzy Maps.
-            styles: [{"stylers":[{"hue":"#ff1a00"},{"invert_lightness":true},{"saturation":-100},{"lightness":33},{"gamma":0.5}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2D333C"}]}]
+            styles: [{"stylers":[{"hue":"#2C2C31"},{"invert_lightness":true},{"saturation":-100},{"lightness":33},{"gamma":0.5}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2C2C31"}]}]
         };
 
         // Get the HTML DOM element that will contain your map 
