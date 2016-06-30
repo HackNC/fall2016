@@ -9,30 +9,30 @@
 }
 .parallax-mirror{
   /* Webkit color separated image looks best with pixelated, but others look best with auto. */
-  image-rendering: pixelated;
+  /*image-rendering: pixelated;*/
   /* Opera */
-  image-rendering: -o-crisp-edges;
+  /*image-rendering: -o-crisp-edges;*/
   /* Best on Firefox and Safari, put this on bottom, webkit will ignore. */
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
+  /*image-rendering: -moz-crisp-edges;*/
+  /*image-rendering: crisp-edges;*/
   /* IE */
-  -ms-interpolation-mode: nearest-neighbor;
+  /*-ms-interpolation-mode: nearest-neighbor;*/
 }
 .parallax {
   /* Webkit color separated image looks best with pixelated, but others look best with auto. */
-  image-rendering: pixelated;
+  /*image-rendering: pixelated;*/
   /* Opera */
-  image-rendering: -o-crisp-edges;
+  /*image-rendering: -o-crisp-edges;*/
   /* Best on Firefox and Safari, put this on bottom, webkit will ignore. */
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
+  /*image-rendering: -moz-crisp-edges;*/
+  /*image-rendering: crisp-edges;*/
   /* IE */
-  -ms-interpolation-mode: nearest-neighbor;
+  /*-ms-interpolation-mode: nearest-neighbor;*/
   /*background-image: url("../images/landing/old/bg-gradient.png");
   z-index: -200;*/
 }
 .mobile-no-parallax {
-  image-rendering: pixelated;
+  /*image-rendering: pixelated;*/
   background-image: url("../images/flattened.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,10 +41,10 @@
   margin-bottom: 20px;
 }
 #header-container {
-  background-image: url("../images/landing/layer1.png");
+  background-image: url("../images/medium-landing/layer1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top; 
+  background-position: center bottom; 
   width:100%;
   margin-bottom: 20px;
 }
