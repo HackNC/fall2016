@@ -9,30 +9,30 @@
 }
 .parallax-mirror{
   /* Webkit color separated image looks best with pixelated, but others look best with auto. */
-  /*image-rendering: pixelated;*/
+  image-rendering: pixelated;
   /* Opera */
-  /*image-rendering: -o-crisp-edges;*/
+  image-rendering: -o-crisp-edges;
   /* Best on Firefox and Safari, put this on bottom, webkit will ignore. */
-  /*image-rendering: -moz-crisp-edges;*/
-  /*image-rendering: crisp-edges;*/
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
   /* IE */
-  /*-ms-interpolation-mode: nearest-neighbor;*/
+  -ms-interpolation-mode: nearest-neighbor;
 }
 .parallax {
   /* Webkit color separated image looks best with pixelated, but others look best with auto. */
-  /*image-rendering: pixelated;*/
+  image-rendering: pixelated;
   /* Opera */
-  /*image-rendering: -o-crisp-edges;*/
+  image-rendering: -o-crisp-edges;
   /* Best on Firefox and Safari, put this on bottom, webkit will ignore. */
-  /*image-rendering: -moz-crisp-edges;*/
-  /*image-rendering: crisp-edges;*/
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
   /* IE */
-  /*-ms-interpolation-mode: nearest-neighbor;*/
+  -ms-interpolation-mode: nearest-neighbor;
   /*background-image: url("../images/landing/old/bg-gradient.png");
   z-index: -200;*/
 }
 .mobile-no-parallax {
-  /*image-rendering: pixelated;*/
+  image-rendering: pixelated;
   background-image: url("../images/flattened.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -89,10 +89,22 @@
     font-family: sans-serif;
     font-weight: 150;
 }
+.subsection h2 {
+    margin-top: 30px;
+    font-family: 'geo-sans-light', cursive;
+    font-size: 45px;
+    background-image: url("../images/header1.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 15px;
+}
 .stay-tuned ul {
   margin-top: 60px;
   font-family: 'geo-sans-light', cursive;
   font-size: 30px;
+  background-color: #2C2C31;
+  height: 100%;
 }
 .stay-tuned li {
   list-style-type: none;
@@ -104,20 +116,12 @@
   text-decoration: none;
   color: #FFFFFF;
 }
-.subsection h2 {
-    margin-top: 30px;
-    font-family: 'geo-sans-light', cursive;
-    font-size: 45px;
-}
-
 .stay-tuned {
   border: 10px solid #3F6185;
 }
-
 .mission-statment {
     margin-top: 20px;
 }
-
 .buttons {
   margin-top: 20px;
 }
@@ -144,8 +148,10 @@
     color: #3F6185;
 }
 .mobile-app .phone {
-    width: 150px;
-    height: 300px;
+    text-align: center;
+    margin-top: 40px;
+    width: 125px;
+    height: 250px;
 }
 .mobile-app h2 {
 }
@@ -153,7 +159,7 @@
     margin-bottom: 30px;
 }
 .map-container {
-    margin-top: 50px;
+    margin-top: 40px;
     width:100%;
     height:350px;
 }
@@ -170,9 +176,6 @@
       padding-top: 220px;
       position: relative;
     }
-    .phone {
-      display: none;
-    }
     .mobile-no-parallax {
       display: block;
       height: 500px;
@@ -180,12 +183,15 @@
     .parallax {
       display: none;
     }
+    .stay-tuned {
+      border: 0px;
+      margin-top: -50px;
+    }
 }
 @media (min-width: 768px){
-
-    /*Override Bootstrap*/
-    #mission-statment-ram {
-        width: 300px;
+    .stay-tuned {
+      border: 10px solid #3F6185;
+      margin-top: 0px;
     }
     #header-container {
         height: 600px;
@@ -193,9 +199,6 @@
     .apply {
         padding-top: 260px;
         position: fixed;
-    }
-    .phone {
-      display: inline-block;
     }
     .mobile-no-parallax {
       display: none;
