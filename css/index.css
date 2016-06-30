@@ -46,7 +46,12 @@
   background-repeat: no-repeat;
   background-position: center bottom; 
   width:100%;
-  margin-bottom: 20px;
+}
+.tape {
+  height:40px;
+  width: 100%;
+  margin-top: -20px;
+  background-color: #2C2C31;
 }
 .apply {
     width: 100%;
