@@ -41,6 +41,7 @@ function mapinit(){
     }
 }
 function mobileinit() {
+    buttonCheckScroll(); //do this once when the page loads
     if (window.isBrowserMobile){
         // Setup for mobile browsers
         console.log("Mobile Browser Detected");
@@ -51,7 +52,6 @@ function mobileinit() {
         //setup for desktop browsers
         console.log("Full Browser Detected");
         $(".apply").css("position", "fixed");
-        buttonCheckScroll(); //do this once when the page loads
         $(window).scroll(function(){
             buttonCheckScroll();
         });
@@ -73,6 +73,6 @@ function buttonCheckScroll(){
     if ($(window).scrollTop() > 200){
         button.css("display", "none");
     } else {
-        button.css("display", "block");
+        button.css("display", "inline-block");
     } 
 }
