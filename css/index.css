@@ -56,7 +56,7 @@
 .apply {
     width: 100%;
     display: block;
-    position: fixed;
+    position: relative;
 }
 #apply-button {
     margin-left: auto;

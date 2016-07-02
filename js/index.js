@@ -1,4 +1,4 @@
-function init(){
+var init = function(){
     //Entry point of this JS file
     window.isBrowserMobile = isMobile();
     mobileinit();
@@ -51,6 +51,7 @@ function mobileinit() {
         //setup for desktop browsers
         console.log("Full Browser Detected");
         $(".apply").css("position", "fixed");
+        
         onscroll = function() {
             var button = $(".apply");
             button.css("opacity", Math.abs(1 - ($(window).scrollTop() / 250)));
