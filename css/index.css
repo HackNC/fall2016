@@ -3,9 +3,12 @@
   font-family: 'geo-sans-light';
   src: url("../fonts/geo_sans_light/GeosansLight.ttf");
 }
-
+html {
+  height: 100%;
+}
 .hacknc-body {
     background-color: #2C2C31;
+    height: 100%;
 }
 .parallax-mirror{
   /* Webkit color separated image looks best with pixelated, but others look best with auto. */
@@ -17,6 +20,9 @@
   image-rendering: crisp-edges;
   /* IE */
   -ms-interpolation-mode: nearest-neighbor;
+}
+.parallax-window {
+  height: 100%;
 }
 .parallax {
   /* Webkit color separated image looks best with pixelated, but others look best with auto. */
@@ -30,6 +36,7 @@
   -ms-interpolation-mode: nearest-neighbor;
   /*background-image: url("../images/landing/old/bg-gradient.png");
   z-index: -200;*/
+  height: 100%;
 }
 .mobile-no-parallax {
   image-rendering: pixelated;
@@ -46,6 +53,7 @@
   background-repeat: no-repeat;
   background-position: center bottom; 
   width:100%;
+  height: 105%;
 }
 .tape {
   height:40px;
@@ -176,7 +184,7 @@
 /* Sections based on screen size*/
 @media (min-width: 0px){
     #header-container {
-        height: 400px;
+        /*height: 400px;*/
     }
     .apply {
       padding-top: 220px;
@@ -199,7 +207,7 @@
       margin-top: 0px;
     }
     #header-container {
-        height: 600px;
+        /*height: 600px;*/
     }
     .apply {
         padding-top: 260px;
@@ -213,7 +221,7 @@
 }
 @media (min-width: 1170px){
     #header-container {
-        height: 850px;
+        /*height: 850px;*/
     }
     .apply {
          padding-top: 340px;
@@ -221,7 +229,7 @@
 }
 @media (min-width: 1900px){
     #header-container {
-        height: 1100px;
+        /*height: 1100px;*/
     }
     .apply {
         padding-top: 470px;
