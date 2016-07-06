@@ -51,7 +51,7 @@ function mobileinit() {
     } else {
         //setup for desktop browsers
         console.log("Full Browser Detected");
-        $(".apply").css("position", "fixed");
+        // $(".apply").css("position", "fixed");
         $(window).scroll(function(){
             buttonCheckScroll();
         });
