@@ -7,7 +7,7 @@
     background: none;
     border: 10px solid #3F6185;
     color: #ffffff;    
-    height: 100%;
+    height: 330px;
 }
 
 .panel-primary > .panel-heading {
@@ -26,8 +26,6 @@ a:hover {
 }
 
 .faq-row {
-    display: flex;
-    display: -webkit-flex;
     padding-bottom: 10px;
     padding-top: 10px;
 }
