@@ -7,7 +7,12 @@
     background: none;
     border: 10px solid #3F6185;
     color: #ffffff;    
-    height: 330px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.faq-body {
+    display: none;
 }
 
 .panel-primary > .panel-heading {
