@@ -423,7 +423,18 @@
 
         <script>
             $(".faq").click(function(){
-                $(this).children(".faq-body").slideToggle();
+                if($(this).hasClass("toggled")) {
+                    $(this).children(".faq-body").hide();
+                    $(this).animate({"height": "100%"}).removeClass("toggled");
+                } else {
+                    $(this).animate({"height": "250px"}).addClass("toggled");
+                    $(this).children(".faq-body").slideDown();
+                }
+                /*$(this).children(".faq-body").slideToggle("slow", function(){
+                  if($(this).hasClass("toggled")){
+                      $(this).animate({"height" : "330px"});
+                  }  
+                });*/
             });
         </script>
 
