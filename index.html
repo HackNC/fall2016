@@ -443,7 +443,7 @@
         <script>
             $(".faq").click(function(){
                 if($(this).hasClass("toggled")) {
-                    $(this).children(".faq-body").hide();
+                    $(this).children(".faq-body").slideUp();
                     $(this).animate({"height": "100%"}).removeClass("toggled");
                 } else {
                     $(this).animate({"height": "250px"}).addClass("toggled");
