@@ -79,6 +79,10 @@ html {
   color: #ffd600;
   text-decoration: none;  
 }
+.navi a:focus {
+  color: #ffffff;
+  text-decoration: none; 
+}
 .tape {
   height:40px;
   width: 100%;
@@ -114,10 +118,19 @@ html {
 .apply .btn:hover {
     color: #3F6185;
 }
+.shell {
+  width: 100%;
+}
+.shell.blue {
+  background-color: #3F6185;
+}
+.shell.gray {
+  background-color: #2C2C31;
+}
 .subsection {
     color: #FFFFFF;
-    margin-top: 40px;
-    margin-bottom:40px;
+    margin-top: 20px;
+    margin-bottom:20px;
 }
 .subsection p {
     margin-top: 20px;
@@ -137,25 +150,27 @@ html {
     background-size: contain;
     padding-bottom: 15px;
 }
-.stay-tuned ul {
+.stay-tuned {
+  /*border: 10px solid #3F6185;*/
+}
+.social-media ul {
   margin-top: 60px;
   font-family: 'geo-sans-light', cursive;
   font-size: 30px;
-  background-color: #2C2C31;
+  /*background-color: #2C2C31;*/
   height: 100%;
+  width: 190px;
+  padding-left: 0px;
 }
-.stay-tuned li {
+.social-media li {
   list-style-type: none;
 }
-.stay-tuned .fa {
+.social-media .fa {
   color: #ffd600;
 }
-.stay-tuned ul a{
+.social-media ul a{
   text-decoration: none;
   color: #FFFFFF;
-}
-.stay-tuned {
-  border: 10px solid #3F6185;
 }
 .mission-statment {
     margin-top: 20px;
@@ -235,7 +250,7 @@ html {
 }
 @media (min-width: 768px){
     .stay-tuned {
-      border: 10px solid #3F6185;
+      /*border: 10px solid #3F6185;*/
       margin-top: 0px;
     }
     #header-container {
@@ -283,7 +298,7 @@ html {
     background-color: black;
 }
 
-img.centered {
+.centered {
     margin-right: auto;
     margin-left: auto;
     display:block;
