@@ -2,7 +2,8 @@ var init = function(){
     //Entry point of this JS file
     window.isBrowserMobile = isMobile();
     mobileinit();
-    mapinit();
+    // mapinit();
+    faqinit();
 }
 function mapinit(){
     // When the window has finished loading create our google map below
@@ -56,6 +57,22 @@ function mobileinit() {
             buttonCheckScroll();
         });
     }
+}
+function faqinit(){
+    $(".faq").click(function(){
+        if($(this).hasClass("toggled")) {
+            $(this).children(".faq-body").slideUp();
+            $(this).animate({"height": "100%"}).removeClass("toggled");
+        } else {
+            $(this).animate({"height": "250px"}).addClass("toggled");
+            $(this).children(".faq-body").slideDown();
+        }
+        /*$(this).children(".faq-body").slideToggle("slow", function(){
+          if($(this).hasClass("toggled")){
+              $(this).animate({"height" : "330px"});
+          }  
+        });*/
+    });
 }
 function isMobile() {
     var check = false;
