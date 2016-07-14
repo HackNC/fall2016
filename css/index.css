@@ -9,6 +9,7 @@ html {
 .hacknc-body {
     background-color: #2C2C31;
     height: 100%;
+    overflow-x: hidden;
 }
 .parallax-mirror{
   /* Webkit color separated image looks best with pixelated, but others look best with auto. */
@@ -55,10 +56,29 @@ html {
   width:100%;
   height: 100%;
 }
-.navi {
-  margin-top: -52px;
-  list-style-type: none;
+#navbar {
   overflow: hidden;
+  background-color: transparent;
+  padding-top: 10px;
+  z-index: 100;
+}
+.navi {
+  list-style-type: none;
+  padding-left: 0px;
+}
+#navbar.sticky {
+  padding-bottom: 10px;
+  margin-top: 0px;
+  position: fixed;
+  top: 0px;
+  background-color: #2C2C31;
+  width: 100%;
+}
+#navbar.relative {
+  bottom: 0px;
+  position: absolute;
+  /*padding-top: 0px;*/
+  padding-bottom: 20px;
 }
 .navi li {
   width: 80px;
@@ -84,7 +104,7 @@ html {
   text-decoration: none; 
 }
 .tape {
-  height:40px;
+  height: 40px;
   width: 100%;
   margin-top: -20px;
   background-color: #2C2C31;
@@ -120,6 +140,7 @@ html {
 }
 .shell {
   width: 100%;
+  z-index: 10;
 }
 .shell.blue {
   background-color: #3F6185;
@@ -133,22 +154,22 @@ html {
     margin-bottom:20px;
 }
 .subsection p {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 1.3em;
-    line-height: 1.9em;  
-    font-family: sans-serif;
-    font-weight: 150;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 1.3em;
+  line-height: 1.9em;  
+  font-family: sans-serif;
+  font-weight: 150;
 }
 .subsection h2 {
-    margin-top: 30px;
-    font-family: 'geo-sans-light', cursive;
-    font-size: 45px;
-    background-image: url("../images/header1.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-bottom: 15px;
+  margin-top: 30px;
+  font-family: 'geo-sans-light', cursive;
+  font-size: 45px;
+  background-image: url("../images/header1.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 15px;
 }
 .stay-tuned {
   /*border: 10px solid #3F6185;*/
@@ -159,7 +180,7 @@ html {
   font-size: 30px;
   /*background-color: #2C2C31;*/
   height: 100%;
-  width: 190px;
+  width: 250px;
   padding-left: 0px;
 }
 .social-media li {
@@ -233,19 +254,22 @@ html {
       display: block;
       height: 500px;
     }
+    .tape {
+      display: none;
+    }
     .parallax {
       display: none;
     }
     .stay-tuned {
       border: 0px;
-      margin-top: -50px;
-    }
-    .navi {
-      margin-top: -42px;
+      margin-top: -20px;
     }
     .navi li {
       font-size: 18px;
       width: 60px;
+    }
+    #navbar {
+      top: 460px;
     }
 }
 @media (min-width: 768px){
@@ -260,18 +284,22 @@ html {
         padding-top: 320px;
         position: fixed;
     }
+    .tape {
+      display: block;
+    }
     .mobile-no-parallax {
       display: none;
     }
     .parallax {
       display: block;
     }
-    .navi {
-      margin-top: -52px;
-    }
     .navi li {
       font-size: 22px;
       width: 80px;
+    }
+    #navbar {
+      /*bottom: 0px;*/
+      top: initial;
     }
 }
 @media (min-width: 1170px){
@@ -280,9 +308,6 @@ html {
     }
     .apply {
       padding-top: 340px;
-    }
-    .navi {
-      margin-top: -5%;
     }
 }
 @media (min-width: 1900px){
