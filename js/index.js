@@ -76,20 +76,22 @@ function faqinit(){
     });
 }
 function navbarinit(){
-    navbar = $(".navi");
+    navbar = $("#navbar");
     navheight = navbar.offset().top
-    if (!isMobile()){
-        $(window).scroll(function(){
-            var to_top = navheight - $(window).scrollTop()
-            if (to_top < 0){
-                navbar.css("position", "fixed");
-                navbar.css("top", "0px");
-                navbar.css("margin-top", "0px");
-            } else {
-                navbar.css("position", "relative");
-            }
-        })
+    checkNavBar = function(){
+        var to_top = navheight - $(window).scrollTop()
+        if (to_top < 0){
+            navbar.addClass("sticky");
+            navbar.removeClass("relative");
+        } else {
+            navbar.removeClass("sticky");
+            navbar.addClass("relative");
+        }
     }
+    if (!isMobile()){
+        $(window).scroll(checkNavBar)
+    }
+    checkNavBar();
 }
 function isMobile() {
     var check = false;
