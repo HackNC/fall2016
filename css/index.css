@@ -59,6 +59,7 @@ html {
 #navbar {
   overflow: hidden;
   background-color: transparent;
+  padding-top: 10px;
   z-index: 100;
 }
 .navi {
@@ -66,7 +67,6 @@ html {
   padding-left: 0px;
 }
 #navbar.sticky {
-  padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 0px;
   position: fixed;
@@ -77,7 +77,7 @@ html {
 #navbar.relative {
   bottom: 0px;
   position: absolute;
-  padding-top: 0px;
+  /*padding-top: 0px;*/
   padding-bottom: 20px;
 }
 .navi li {
@@ -154,22 +154,22 @@ html {
     margin-bottom:20px;
 }
 .subsection p {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 1.3em;
-    line-height: 1.9em;  
-    font-family: sans-serif;
-    font-weight: 150;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 1.3em;
+  line-height: 1.9em;  
+  font-family: sans-serif;
+  font-weight: 150;
 }
 .subsection h2 {
-    margin-top: 30px;
-    font-family: 'geo-sans-light', cursive;
-    font-size: 45px;
-    background-image: url("../images/header1.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-bottom: 15px;
+  margin-top: 30px;
+  font-family: 'geo-sans-light', cursive;
+  font-size: 45px;
+  background-image: url("../images/header1.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 15px;
 }
 .stay-tuned {
   /*border: 10px solid #3F6185;*/
@@ -298,7 +298,8 @@ html {
       width: 80px;
     }
     #navbar {
-      top: 0px;
+      /*bottom: 0px;*/
+      top: initial;
     }
 }
 @media (min-width: 1170px){
