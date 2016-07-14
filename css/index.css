@@ -9,6 +9,7 @@ html {
 .hacknc-body {
     background-color: #2C2C31;
     height: 100%;
+    overflow-x: hidden;
 }
 .parallax-mirror{
   /* Webkit color separated image looks best with pixelated, but others look best with auto. */
@@ -120,6 +121,7 @@ html {
 }
 .shell {
   width: 100%;
+  z-index: 10;
 }
 .shell.blue {
   background-color: #3F6185;
@@ -159,7 +161,7 @@ html {
   font-size: 30px;
   /*background-color: #2C2C31;*/
   height: 100%;
-  width: 190px;
+  width: 250px;
   padding-left: 0px;
 }
 .social-media li {
@@ -233,12 +235,15 @@ html {
       display: block;
       height: 500px;
     }
+    .tape {
+      display: none;
+    }
     .parallax {
       display: none;
     }
     .stay-tuned {
       border: 0px;
-      margin-top: -50px;
+      margin-top: -20px;
     }
     .navi {
       margin-top: -42px;
@@ -259,6 +264,9 @@ html {
     .apply {
         padding-top: 320px;
         position: fixed;
+    }
+    .tape {
+      display: block;
     }
     .mobile-no-parallax {
       display: none;

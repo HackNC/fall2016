@@ -4,6 +4,7 @@ var init = function(){
     mobileinit();
     // mapinit();
     faqinit();
+    navbarinit();
 }
 function mapinit(){
     // When the window has finished loading create our google map below
@@ -74,6 +75,22 @@ function faqinit(){
         });*/
     });
 }
+function navbarinit(){
+    navbar = $(".navi");
+    navheight = navbar.offset().top
+    if (!isMobile()){
+        $(window).scroll(function(){
+            var to_top = navheight - $(window).scrollTop()
+            if (to_top < 0){
+                navbar.css("position", "fixed");
+                navbar.css("top", "0px");
+                navbar.css("margin-top", "0px");
+            } else {
+                navbar.css("position", "relative");
+            }
+        })
+    }
+}
 function isMobile() {
     var check = false;
     console.log(navigator.userAgent + navigator.vendor + window.opera);
@@ -86,7 +103,7 @@ function isMobile() {
 function buttonCheckScroll(){
     /* Button Not shown until after the page has loaded to prevent flashing */
     var button = $(".apply");
-    button.css("opacity", Math.abs(1 - ($(window).scrollTop() / 250)));
+    button.css("opacity", Math.abs(1 - ($(window).scrollTop() / 200)));
     if ($(window).scrollTop() > 200){
         button.css("display", "none");
     } else {
