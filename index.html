@@ -22,11 +22,10 @@
         <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script> -->
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/parallax.min.js"></script>  
-        <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
         <script type="text/javascript" src="js/index.js"></script>
         <script> $(window).load(init); </script>
 	</head>
-	<body class="hacknc-body" data-spy="scroll" data-target=".scroll-navbar" data-offset="50"> 
+	<body class="hacknc-body"> 
         <div class='parallax'>
             <div class="parallax-window" data-parallax="scroll" data-image-src="images/medium-landing/layer2.png" data-speed=".8">
                 <div class="parallax-window" data-parallax="scroll" data-image-src="images/medium-landing/title.png" data-speed=".1">
@@ -59,15 +58,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <nav class="scroll-navbar">
-                            <ul class="navi relative">
-                                <!-- <li><a href="#history">History</a></li> -->
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#faq">FAQ<a></li>
-                                <li><a href="#keep-watch">Apply</a></li>
-                                <li><a href="#sponsor">Sponsor</a></li>
-                            </ul>
-                        </nav>
+                        <ul class="navi relative">
+                            <!-- <li><a href="#history">History</a></li> -->
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#faq">FAQ<a></li>
+                            <li><a href="#keep-watch">Apply</a></li>
+                            <li><a href="#sponsor">Sponsor</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -110,9 +107,9 @@
             </div>
         </div>
 
-        <div class="shell gray" id="about">
+        <div class="shell gray">
             
-            <div class="container">
+            <div class="container" id="about">
 
         		<!-- Do we want columns? -->
                 <!-- There should be an outer div here to take up the page width.  Then an innter div with the main content. -->
@@ -187,8 +184,8 @@
 
         </div>
         -->
-        <div class="shell gray" id="faq">
-        <div class="container">
+        <div class="shell gray">
+        <div class="container" id="faq">
 			<div class="subsection row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 content">
                     <h2>FAQs</h2>
@@ -328,8 +325,8 @@
             </div>
         </div>
 
-        <div class="shell blue" id="keep-watch">
-            <div class="container">
+        <div class="shell blue">
+            <div class="container" id="keep-watch">
 
                 <div class="subscribe subsection row">
 
