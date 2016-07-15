@@ -232,6 +232,42 @@ html {
 .mobile-app p {
     margin-bottom: 30px;
 }
+
+.faq {
+    background: none;
+    border: 10px solid #3F6185;
+    color: #ffffff;    
+    height: 100%;
+    cursor: pointer;
+}
+
+.faq-body {
+    display: none;
+}
+
+.panel-primary > .panel-heading {
+    background: none;
+    border-bottom: 5px solid #ffd600;
+
+}
+
+.faq a {
+    color: #ffd600;
+}
+
+.faq a:hover {
+    color: #ccaa00;
+
+}
+
+.faq-row {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.faq h2 {
+    color: #ffffff;
+}
 .map-container {
     margin-top: 40px;
     width:100%;
