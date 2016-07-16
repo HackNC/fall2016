@@ -6,6 +6,9 @@
 html {
   height: 100%;
 }
+.fancy {
+  font-family: 'geo-sans-light', sans-serif;
+}
 .hacknc-body {
     background-color: #2C2C31;
     height: 100%;
@@ -236,6 +239,21 @@ html {
     margin-top: 40px;
     width:100%;
     height:350px;
+}
+#sponsor-email{
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+#sponsor-email .fa {
+  font-size: 30px;
+  color: #ffd600;
+}
+.round-border {
+  border: 10px solid #3F6185;
+  border-radius: 4px;
 }
 #map {
     width:100%;
