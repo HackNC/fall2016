@@ -281,7 +281,9 @@ html {
         /*height: 600px;*/
     }
     .apply {
-        padding-top: 320px;
+        /*padding-top: 23%;*/
+        padding-top: 0px;
+        top: 40%;
         position: fixed;
     }
     .tape {
@@ -307,16 +309,17 @@ html {
       /*height: 850px;*/
     }
     .apply {
-      padding-top: 340px;
+      /*padding-top: 340px;*/
+      /*top:40%;*/
     }
 }
-@media (min-width: 1900px){
-    #header-container {
-        /*height: 1100px;*/
-    }
-    .apply {
-      padding-top: 470px;
-    }
+@media (min-width: 1400px){
+  #navbar.relative {
+    padding-bottom: 25px;
+  }
+  .navi li {
+    font-size: 24px;
+  }
 }
 
 .black {
