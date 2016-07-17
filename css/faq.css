@@ -13,12 +13,19 @@
 
 .faq-body {
     display: none;
+    font-size: 16px;
+    /*border-top: 5px solid #6BB0F2;*/
 }
 
 .panel-primary > .panel-heading {
-    background: none;
-    border-bottom: 5px solid #ffd600;
-
+    background: #5A8EC5;
+    border-bottom: none;
+    color: #2C2C31;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s; 
+}
+.panel-primary > .panel-heading:hover {
+    background: #6BB0F2;
 }
 
 a {
@@ -31,8 +38,8 @@ a:hover {
 }
 
 .faq-row {
-    padding-bottom: 10px;
-    padding-top: 10px;
+/*    padding-bottom: 10px;
+    padding-top: 10px;*/
 }
 
 h2 {

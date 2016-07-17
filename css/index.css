@@ -3,6 +3,9 @@
   font-family: 'geo-sans-light';
   src: url("../fonts/geo_sans_light/GeosansLight.ttf");
 }
+
+/*greys: (#2C2C31, #4F4744); blues: ( #3F6185, #5A8EC5, #6BB0F2, #80C1FD); yellows: (#ffc027, #ffd600)*/
+
 html {
   height: 100%;
 }
