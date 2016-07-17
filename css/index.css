@@ -171,6 +171,9 @@ html {
   font-family: sans-serif;
   font-weight: 150;
 }
+.subsection a:hover{
+  text-decoration: none;
+}
 .subsection h2 {
   margin-top: 30px;
   font-family: 'geo-sans-light', cursive;
