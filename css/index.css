@@ -100,7 +100,7 @@ html {
   padding-bottom: 20px;
 }
 .navi li {
-  width: 80px;
+  /*width: 80px;*/
   font-family: 'geo-sans-light', sans-serif;
   font-size: 22px;
   float: left;
@@ -264,10 +264,24 @@ html {
   height:100%;
 }
 .footer img {
-  margin-left: 30px;
+  opacity: .5;
+  display: block;
+  margin: 0 auto;
 }
-.footer li{
+.footer img:hover{
+  opacity: .8;
+}
+.footer ul {
+  margin-top: 40px;
+/*  margin-right: auto;
+  margin-left: auto;*/
+  width: inherit;
+}
+.footer .navi li{
   display: list-item;
+  clear: both;
+  opacity: .3;
+  font-size: 28px;
 }
 /* Sections based on screen size*/
 @media (min-width: 0px){
@@ -294,10 +308,14 @@ html {
   }
   .navi li {
     font-size: 18px;
-    width: 60px;
+    /*width: 85px;*/
+    padding-left: 20px;
   }
   #navbar {
     top: 460px;
+  }
+  .footer .navi{
+    display: none;
   }
 }
 @media (min-width: 768px){
@@ -325,11 +343,15 @@ html {
   }
   .navi li {
     font-size: 22px;
-    width: 80px;
+    /*width: 100px;*/
+    padding-left: 40px;
   }
   #navbar {
     /*bottom: 0px;*/
     top: initial;
+  }
+  .footer .navi{
+    display: block;
   }
 }
 @media (min-width: 1170px){
