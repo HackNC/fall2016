@@ -92,8 +92,8 @@ function navbarinit(){
     }
     if (!isMobile()){
         $(window).scroll(checkNavBar)
+        checkNavBar();
     }
-    checkNavBar();
 }
 function isMobile() {
     var check = false;

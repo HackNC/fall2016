@@ -307,6 +307,7 @@ html {
   .mobile-no-parallax {
     display: block;
     height: 500px;
+    background-position: center bottom; 
   }
   .tape {
     display: none;
