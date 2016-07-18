@@ -50,6 +50,8 @@ function mobileinit() {
         $(".apply").css("position", "relative");
         $(".parallax").css("display", "none");
         $(".mobile-no-parallax").css("display", "block");
+        $(".navi").addClass("relative");
+        $("#navbar").css("top", "460px")
     } else {
         //setup for desktop browsers
         console.log("Full Browser Detected");
