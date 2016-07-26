@@ -5,6 +5,8 @@ var init = function(){
     // mapinit();
     faqinit();
     navbarinit();
+
+    $(window).resize(navbarinit);
 }
 function mapinit(){
     // When the window has finished loading create our google map below

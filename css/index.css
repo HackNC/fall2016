@@ -89,7 +89,6 @@ html {
   padding-left: 0px;
 }
 #navbar.sticky {
-  padding-bottom: 10px;
   margin-top: 0px;
   position: fixed;
   top: 0px;
@@ -99,8 +98,6 @@ html {
 #navbar.relative {
   bottom: 0px;
   position: absolute;
-  /*padding-top: 0px;*/
-  padding-bottom: 20px;
 }
 .navi li {
   /*width: 80px;*/
@@ -108,7 +105,6 @@ html {
   font-size: 22px;
   float: left;
   display: block;
-  line-height: 30px;
 }
 .navi a{
   /*display: block;  */
@@ -326,12 +322,14 @@ html {
     font-size: 18px;
     /*width: 85px;*/
     padding-left: 20px;
+    margin-top: -8px;
   }
   #navbar {
-    top: 460px;
+    top: 450px;
     background-color: transparent;
     border-bottom: none;
-    padding-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .footer .navi{
     display: none;
@@ -367,13 +365,13 @@ html {
     font-size: 22px;
     /*width: 100px;*/
     padding-left: 40px;
+    margin-top: 0px;
   }
   #navbar {
     /*bottom: 0px;*/
     top: initial;
     background-color: #2C2C31;
     border-bottom: 3px solid #272727;
-    padding-top: 10px;
   }
   .footer .navi{
     display: block;
@@ -387,11 +385,12 @@ html {
     /*padding-top: 340px;*/
     /*top:40%;*/
   }
+  #navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 @media (min-width: 1400px){
-  #navbar.relative {
-    padding-bottom: 25px;
-  }
   .navi li {
     font-size: 24px;
   }
