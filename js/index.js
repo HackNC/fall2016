@@ -7,6 +7,11 @@ var init = function(){
     navbarinit();
 
     $(window).resize(navbarinit);
+
+    // Compensate for navbar overlap
+    var shiftWindow = function() { scrollBy(0, -40) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
 }
 function mapinit(){
     // When the window has finished loading create our google map below
@@ -64,13 +69,13 @@ function mobileinit() {
     }
 }
 function faqinit(){
-    $(".faq").click(function(){
+    $(".faq").on("click", function(){
         if($(this).hasClass("toggled")) {
-            $(this).children(".faq-body").slideUp();
-            $(this).animate({"height": "100%"}).removeClass("toggled");
+            $(this).children(".faq-body").slideUp(200);
+            $(this).animate({"height": "100%"}, 200).removeClass("toggled");
         } else {
-            $(this).animate({"height": "250px"}).addClass("toggled");
-            $(this).children(".faq-body").slideDown();
+            $(this).animate({"height": "250px"}, 200).addClass("toggled");
+            $(this).children(".faq-body").slideDown(200);
         }
         /*$(this).children(".faq-body").slideToggle("slow", function(){
           if($(this).hasClass("toggled")){
