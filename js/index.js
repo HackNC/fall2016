@@ -57,8 +57,10 @@ function mobileinit() {
         $(".apply").css("position", "relative");
         $(".parallax").css("display", "none");
         $(".mobile-no-parallax").css("display", "block");
-        $(".navi").addClass("relative");
-        $("#navbar").css("top", "460px")
+        $("#navbar").removeClass("relative");
+        $("#navbar").css("top", "1px")
+        $(".parallax").remove();
+        $(".parallax-mirror").remove();
     } else {
         //setup for desktop browsers
         console.log("Full Browser Detected");
