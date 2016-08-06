@@ -33,13 +33,8 @@
   #navbar {
     top: 450px;
     background-color: transparent;
-    border-bottom: none;
     padding-top: 10px;
     padding-bottom: 10px;
-    &.relative{
-      height: 50px;
-      border-bottom: none;
-    }
   }
   .footer .navi{
     display: none;

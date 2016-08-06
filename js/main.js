@@ -54,6 +54,7 @@ function mobileinit() {
         $(".mobile-no-parallax").css("display", "block");
         $(".navi").addClass("relative");
         $("#navbar").css("top", "460px")
+        $('#navbar').css("bottom", "auto")
     } else {
         //setup for desktop browsers
         console.log("Full Browser Detected");
