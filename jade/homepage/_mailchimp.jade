@@ -1,0 +1,32 @@
+.shell.blue.subscribe-shell
+  #subscribe.anchor
+  .container
+    .subscribe.subsection.row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.content
+        h2 Subscribe
+        p Drop your contact info and get notified first when the official application opens.  You'll have to confirm the subscription from your email.
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.content
+        // Begin MailChimp Signup Form
+        #mc_embed_signup
+          form#mc-embedded-subscribe-form.validate(action='https://hacknc.us10.list-manage.com/subscribe/post?u=427394ddf07cedd0c7d17e04c&id=51fdcfea9e', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+            #mc_embed_signup_scroll
+              .row
+                .col-sm-6
+                  .mc-field-group
+                    label(for='mce-FNAME') First Name   
+                    input#mce-FNAME(type='text', value='', name='FNAME')
+                .col-sm-6
+                  .mc-field-group
+                    label(for='mce-LNAME') Last Name   
+                    input#mce-LNAME(type='text', value='', name='LNAME')
+                .col-sm-12
+                  .mc-field-group
+                    label(for='mce-EMAIL') Email Address #[span.asterisk *]
+                    input#mce-EMAIL.required.email(type='email', value='', name='EMAIL')
+              #mce-responses.clear
+                #mce-error-response.response(style='display:none')
+                #mce-success-response.response(style='display:none')
+              div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                input(type='text', name='b_427394ddf07cedd0c7d17e04c_51fdcfea9e', tabindex='-1', value='')
+              .clear
+                input#mc-embedded-subscribe.button(type='submit', value='Subscribe', name='subscribe')

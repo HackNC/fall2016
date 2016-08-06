@@ -1,244 +1,25 @@
 doctype html
 html
   head
-    // Meta Tags
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    title HackNC Fall 2016
+    include ./shared/_meta.jade
     
-    // CSS
     link(rel='stylesheet', href='css/index.css')
-    
-
-    // SCRIPTS
     script(type='text/javascript', src='js/main.js')
-    script.
-      $(window).load(init);
+    script $(window).load(init);
+
   body.hacknc-body
-    .parallax
-      .parallax-window(data-parallax='scroll', data-image-src='img/medium-landing/layer2.png', data-speed='.8')
-        .parallax-window(data-parallax='scroll', data-image-src='img/medium-landing/title.png', data-speed='.1')
-          .parallax-window(data-parallax='scroll', data-image-src='img/medium-landing/layer3.png', data-speed='.6')
-            .parallax-window(data-parallax='scroll', data-image-src='img/medium-landing/layer4.png', data-speed='.4')
-              #header-container
-                .apply
-                  h3 October 28 - 30, 2016
-                  #apply-button
-                    a.btn.centered(href='#subscribe') Subscribe
-    .mobile-no-parallax
-      .apply
-        h3 October 28 - 30, 2016
-        #apply-button
-          a.btn.centered(href='#subscribe') Subscribe
-    #navbar.shell.relative
-      .container
-        .row
-          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-            ul.navi.relative
-              li: a.subtle-link(href='#about') About
-              li: a.subtle-link(href='#faq') FAQ
-              li: a.subtle-link(href='#sponsor') Sponsor
-              li: a.subtle-link(href='#subscribe') Subscribe
     
-    .tape
+    include ./homepage/_header.jade
 
-    .shell.gray.teaser-shell
-      #teaser.anchor
-      .container
-        .stay-tuned.subsection.row
-          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.content
-            h2 Sit tight, fam
-            p HackNC is gearing up for the best year ever.  We're still working out some of the details, but we'll have updates for you constantly, so #[a(href='#subscribe') check back often] and look for applications to open in August.  If you have any questions (or just to say hello!) check our social media, or shoot an email to #[a(href='mailto:hello@hacknc.com') hello@hacknc.com].  We look forward to seeing you on October 28th!
+    include ./shared/_navbar.jade
+    
+    include ./homepage/_info.jade
+    
+    include ./homepage/_faq.jade
+        
+    include ./homepage/_sponsors.jade
+    
+    include ./homepage/_mailchimp.jade
 
-    .shell.blue.social-shell
-      #social.anchor
-      .container
-        .social-media.subsection.row
-          .col-xs-6.col-xs-offset-0.col-sm-4.col-sm-offset-2
-            ul.social-media.centered
-              li: a(href='https://www.facebook.com/thehacknc/?fref=ts')
-                  i.fa.fa-facebook-official
-                  |  Facebook
-              li: a(href='mailto:hello@hacknc.com')
-                  i.fa.fa-envelope
-                  |  hello@hacknc.com
-              li: a(href='https://www.snapchat.com/add/hacknc')
-                  i.fa.fa-snapchat-square
-                  |  HackNC
-              li: a(href='https://twitter.com/thehacknc')
-                  i.fa.fa-twitter-square
-                  |  @TheHackNC
-          #mission-statment-ram.col-xs-6.col-sm-4
-            img.centered.ram-sprite(src='img/ram-animated-256px.gif')
-
-    .shell.gray.about-shell
-      #about.anchor
-      .container
-        // Do we want columns?
-        // There should be an outer div here to take up the page width.  Then an innter div with the main content.
-        .mission-statment.subsection.row
-          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.content
-            h2 Begin an adventure
-            p HackNC is a weekend for students of all skill levels to broaden their talents. Your challenge is to make an awesome project in just 24 hours. You will have access to hands-on demos and workshops from our sponsors as well as exciting talks about the awesome things happening right now with computer science. During your time here you can enjoy all the free food, clothes, stickers, water bottles, computer accessories, and other miscellanea that you have ever desired.
-    
-    .shell.gray.faq-shell
-      #faq.anchor
-      .container
-        .subsection.row
-          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.content
-            h2 FAQs
-            .row.faq-row
-              .col-xs-24.col-sm-12.col-md-6
-                .faq.panel.panel-primary.hacknc-panel.toggled
-                  .panel-heading.faq-heading
-                    h3 Can I hack?
-                  .panel-body.faq-body High schoolers over 18, undergraduates, and graduate students are welcome to participate as hackers.  Professionals should check out mentorship.
-              .col-xs-24.col-sm-12.col-md-6
-                .faq.panel.panel-primary.hacknc-panel.toggled
-                  .panel-heading.faq-heading
-                    h3 Can I mentor?
-                  .panel-body.faq-body Professionals are welcome to join as mentors, sponsors, or lecturers.  If you want to come as a mentor, send an email to hello@hacknc.com and tell us how you'd like to get involved!
-            .row.faq-row
-              .col-xs-24.col-sm-12.col-md-6
-                .faq.panel.panel-primary.hacknc-panel
-                  .panel-heading.faq-heading
-                    h3 Will I fit in?
-                  .panel-body.faq-body Definitely! HackNC and UNC Computer Science is committed to making computer science a more diverse field. Inclusiveness is a top priority for us, and we've been beginner friendly from the start.
-              .col-xs-24.col-sm-12.col-md-6
-                .faq.panel.panel-primary.hacknc-panel
-                  .panel-heading.faq-heading
-                    h3 Travel costs?
-                  .panel-body.faq-body We've opted to focus on travel reimbursements rather than sending busses.  More details will come later, but if you want to come, we want to get you here!
-            .row.faq-row
-              .col-xs-24.col-sm-12.col-md-6
-                .faq.panel.panel-primary.hacknc-panel
-                  .panel-heading.faq-heading
-                    h3 What is a hackathon?
-                  .panel-body.faq-body A weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff.  There will also be oportunities to win cool prizes and network with our sponsors.
-              .col-xs-24.col-sm-12.col-md-6
-                .faq.panel.panel-primary.hacknc-panel
-                  .panel-heading.faq-heading
-                    h3 Can I use old code?
-                  .panel-body.faq-body You may use all the publicly available code and APIs that you want but the code you will be judged on at the end of the hackathon must be new.
-            .row.faq-row
-              .col-xs-24.col-sm-12.col-md-6
-                .faq.panel.panel-primary.hacknc-panel
-                  .panel-heading.faq-heading
-                    h3 Got any hardware?
-                  .panel-body.faq-body You bet!  MLH is providing the #[a(href='https://mlh.io/hardware-lab') full hardware lab]. In addition we will have soldering and assorted components, Arduinos, Raspberry Pis, sensors, and more Pebbles than you can wear on four limbs...
-              .col-xs-24.col-sm-12.col-md-6
-                .faq.panel.panel-primary.hacknc-panel
-                  .panel-heading.faq-heading
-                    h3 How do I get in?
-                  .panel-body.faq-body Anyone can attend HackNC. #[a(href='#subscribe') Subscribe] below to get notified when applications open.  Our admission criteria doesn't include your level of experience; we're only limited by the amount of food we can serve.
-            .faq-row.row
-              .col-xs-24.col-sm-12.col-md-6
-                .faq.panel.panel-primary.hacknc-panel
-                  .panel-heading.faq-heading
-                    h3 Will there be food?
-                  .panel-body.faq-body Don’t worry - we’ll provide six full meals throughout the hackathon and there will be plenty of snacks in between. You won’t be hungry.
-              .col-xs-24.col-sm-12.col-md-6
-                .faq.panel.panel-primary.hacknc-panel
-                  .panel-heading.faq-heading
-                    h3 What about sleep?
-                  .panel-body.faq-body You should do it!  Bring your own pillow and sleeping bag or blankets. There will be a sleeping space available Friday and Saturday nights.  If you'd prefer a hotel, we can help you find one, but they can be expensive.
-            //
-              <div class="row faq-row">
-              <div class="col-xs-24 col-sm-12 col-md-6">
-              <div class="faq panel panel-primary hacknc-panel">
-              <div class="panel-heading faq-heading">
-              <h3>Admission decisions?</h3>
-              </div>
-              <div class="panel-body faq-body">
-              Admission decisions will be announced on August 22 for early admission and September 12th for regular admission. Afterwards, we will review applications on a case-by-case basis.
-              </div>
-              <div class="panel-heading faq-heading">
-              <h3>What about my team?</h3>
-              </div>
-              <div class="panel-body faq-body">
-              Be yourself; sign up as an individual! You can create your team with whoever you like, up to four people, once you arrive.  HackNC encourages you to be brave and work with new people!
-              </div>
-              </div>
-              </div>
-              <div class="col-xs-24 col-sm-12 col-md-6">
-              <div class="faq panel panel-primary hacknc-panel">
-              <div class="panel-heading faq-heading">
-              <h3>Where is the app?</h3>
-              </div>
-              <div class="panel-body faq-body">
-              The HackNC App is available now for iOS, Android, and all other devices as a web app. <a href="#">Download today!</a>
-              </div>
-              </div>
-              </div>
-    
-    .shell.gray.sponsor-shell
-      #sponsor.anchor
-      .container
-        .sponsor.subsection.row
-          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.content
-            h2 Sponsor Us!
-            p HackNC is entirely student-run, and this will be our fourth incredible hackathon since we began in 2014! Our event is possible thanks to funding from our wonderful sponsors. Your contributions help bring 500+ hackers from all over to an action-packed weekend of innovation through creation. By attending, you can meet hundreds of job-seekers and speak to them during the designated sponsor fair and throughout the whole event. You can also promote your products and services while mentoring and connecting with HackNC participants, volunteers, and organizers.
-        .sponsor.subsection.row
-          .col-lg-4.col-lg-offset-2.col-md-5.col-md-offset-1.content
-            p For a full break-down of our tiers and perks, shoot us an email and we'll get you a point of contact and a copy of our sponsorship information packet.
-          .col-lg-4.col-md-5.col-md-offset-0.col-lg-offset-0.content
-            #sponsor-email.round-border.fancy
-              i.fa.fa-envelope(aria-hidden='true')
-              i.fa.fa-long-arrow-right(aria-hidden='true')
-              i.fa.fa-users(aria-hidden='true')
-              br
-              a.subtle-link(href='mailto:fundraising@hacknc.com') fundraising@hacknc.com
-    
-    .shell.blue.subscribe-shell
-      #subscribe.anchor
-      .container
-        .subscribe.subsection.row
-          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.content
-            h2 Subscribe
-            p Drop your contact info and get notified first when the official application opens.  You'll have to confirm the subscription from your email.
-          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.content
-            // Begin MailChimp Signup Form
-            #mc_embed_signup
-              form#mc-embedded-subscribe-form.validate(action='https://hacknc.us10.list-manage.com/subscribe/post?u=427394ddf07cedd0c7d17e04c&id=51fdcfea9e', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
-                #mc_embed_signup_scroll
-                  .row
-                    .col-sm-6
-                      .mc-field-group
-                        label(for='mce-FNAME') First Name   
-                        input#mce-FNAME(type='text', value='', name='FNAME')
-                    .col-sm-6
-                      .mc-field-group
-                        label(for='mce-LNAME') Last Name   
-                        input#mce-LNAME(type='text', value='', name='LNAME')
-                    .col-sm-12
-                      .mc-field-group
-                        label(for='mce-EMAIL') Email Address #[span.asterisk *]
-                        input#mce-EMAIL.required.email(type='email', value='', name='EMAIL')
-                  #mce-responses.clear
-                    #mce-error-response.response(style='display:none')
-                    #mce-success-response.response(style='display:none')
-                  div(style='position: absolute; left: -5000px;', aria-hidden='true')
-                    input(type='text', name='b_427394ddf07cedd0c7d17e04c_51fdcfea9e', tabindex='-1', value='')
-                  .clear
-                    input#mc-embedded-subscribe.button(type='submit', value='Subscribe', name='subscribe')
-    .shell.gray.footer-shell
-      #footer.anchor
-      .container
-        .footer.subsection.row
-          .col-lg-2.col-lg-offset-2.col-md-3.col-md-offset-1.col-sm-4.content
-            a(href='http://cs.unc.edu')
-              img(src='img/50th-wide-30.png', width='180', height='205')
-          .col-lg-4.col-sm-4.col-md-4.content
-            a(href='http://mlh.io')
-              img(src='img/mlh-logo-white.png', width='180', height='105', style='margin-top:50px;')
-            p
-              | HackNC 2016 site by 
-              a(href='https://github.com/HackNC/fall2016/graphs/contributors') these folks
-          .col-lg-2.col-sm-3.col-md-3.content
-            // Navigation
-            ul.navi
-              li: a.subtle-link(href='#about') About
-              li: a.subtle-link(href='#faq') FAQ
-              li: a.subtle-link(href='#subscribe') Apply
-              li: a.subtle-link(href='#sponsor') Sponsor
+    include ./shared/_footer.jade
 
