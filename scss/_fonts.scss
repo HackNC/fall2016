@@ -1,0 +1,11 @@
+$fa-font-path: "../fonts/font-awesome";
+@import 'font-awesome/font-awesome';
+
+// @font-face {
+//   font-family: 'geo-sans-light';
+//   src: url("../fonts/geo_sans_light/GeosansLight.ttf");
+// }
+
+$header-font: 'geo-sans-light', sans-serif;
+$header-font-cursive: 'geo-sans-light', cursive;
+$body-font: -apple-system, "Helvetica Neue", sans-serif;

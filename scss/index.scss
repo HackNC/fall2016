@@ -1,40 +1,32 @@
-$fa-font-path: "../fonts/font-awesome";
 @import 'bootstrap/bootstrap';
-@import 'font-awesome/font-awesome';
+@import 'fonts';
+@import 'colors';
 @import 'faq';
-
-/*Fonts*/
-@font-face {
-  font-family: 'geo-sans-light';
-  src: url("../fonts/geo_sans_light/GeosansLight.ttf");
-}
-
-/*greys: (#2C2C31, #4F4744); blues: ( #204F80, #3178C4, #3D9BF5, #5FB1FC); yellows: (#ffc027, #ffd600)*/
 
 html {
   height: 100%;
 }
-/* Some general purpose styles */
+
 .fancy {
-  font-family: 'geo-sans-light', sans-serif;
+  font-family: $header-font;
 }
 .subtle-link  {
   text-decoration: none;
-  color: #FFFFFF;
+  color: $white;
   transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;  
 }
 .subtle-link:hover {
-  color: #ffd600;
+  color: $yellow;
   text-decoration: none;
 }
 .subtle-link:focus {
-  color: #ffffff;
+  color: $white;
   text-decoration: none; 
 }
 /* Section styles */
 .hacknc-body {
-  background-color: #5FB1FC;
+  background-color: $blue-4;
   height: 100%;
   overflow-x: hidden;
 }
@@ -72,7 +64,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;   
-  width:100%;
+  width: 100%;
   margin-bottom: 20px;
 }
 #header-container {
@@ -80,14 +72,14 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom; 
-  width:100%;
+  width: 100%;
   height: 100%;
 }
 #navbar {
   overflow: hidden;
   background-color: transparent;
   z-index: 100;
-  background-color: #2C2C31;
+  background-color: $gray;
 }
 .navi {
   list-style-type: none;
@@ -97,7 +89,7 @@ html {
   margin-top: 0px;
   position: fixed;
   top: 0px;
-  background-color: #2C2C31;
+  background-color: $gray;
   width: 100%;
 }
 #navbar.relative {
@@ -106,7 +98,7 @@ html {
 }
 .navi li {
   /*width: 80px;*/
-  font-family: 'geo-sans-light', sans-serif;
+  font-family: $header-font;
   font-size: 22px;
   float: left;
   display: block;
@@ -121,7 +113,7 @@ html {
   height: 40px;
   width: 100%;
   margin-top: -20px;
-  background-color: #2C2C31;
+  background-color: $gray;
 }
 .apply {
   width: 100%;
@@ -135,35 +127,35 @@ html {
   width: 250px;
 }
 .apply .btn {
-  background-color:#ffd600;
-  color: #204F80;
-  font-family: 'geo-sans-light', sans-serif;
+  background-color: $yellow;
+  color: $blue-1;
+  font-family: $header-font;
   font-size: 35px;
-  border-bottom: 3px solid #ffc027; 
+  border-bottom: 3px solid $dark-yellow; 
   transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;  
   width: 100%;
 }
 .apply h3 {
   text-align: center;
-  font-family: 'geo-sans-light', sans-serif;
-  color: #FFFFFF;
+  font-family: $header-font;
+  color: $white;
 }
 .apply .btn:hover {
-  color: #FFFFFF;
+  color: $white;
 }
 .shell {
   width: 100%;
   z-index: 10;
 }
 .shell.blue {
-  background-color: #3178C4;
+  background-color: $blue-2;
 }
 .shell.gray {
-  background-color: #2C2C31;
+  background-color: $gray;
 }
 .subsection {
-  color: #FFFFFF;
+  color: $white;
   margin-top: 20px;
   margin-bottom:20px;
 }
@@ -172,7 +164,7 @@ html {
   margin-bottom: 30px;
   font-size: 1.3em;
   line-height: 1.9em;  
-  font-family: sans-serif;
+  font-family: $body-font;
   font-weight: 150;
 }
 .subsection a:hover{
@@ -180,7 +172,7 @@ html {
 }
 .subsection h2 {
   margin-top: 30px;
-  font-family: 'geo-sans-light', cursive;
+  font-family: $header-font-cursive;
   font-size: 45px;
   background-image: url("../img/header1.png");
   background-position: bottom;
@@ -189,13 +181,13 @@ html {
   padding-bottom: 15px;
 }
 .stay-tuned {
-  /*border: 10px solid #204F80;*/
+  // border: 10px solid $blue-1;
 }
 .social-media ul {
   margin-top: 60px;
-  font-family: 'geo-sans-light', cursive;
+  font-family: $header-font-cursive;
   font-size: 30px;
-  /*background-color: #2C2C31;*/
+  // background-color: $gray;
   height: 100%;
   width: 250px;
   padding-left: 0px;
@@ -204,11 +196,11 @@ html {
   list-style-type: none;
 }
 .social-media .fa {
-  color: #ffd600;
+  color: $yellow;
 }
 .social-media ul a{
   text-decoration: none;
-  color: #FFFFFF;
+  color: $white;
 }
 .mission-statment {
   margin-top: 20px;
@@ -228,7 +220,7 @@ html {
   height: 60px;
   background-color:#ffd600;
   color: #FFFFFF;
-  font-family: 'geo-sans-light', sans-serif;
+  font-family: $header-font;
   font-size: 40px;
   border: 0px; 
   transition-duration: 0.3s;
@@ -236,7 +228,7 @@ html {
   margin-top: 15px;
 }
 .buttons button:hover {
-  color: #204F80;
+  color: $blue-1;
 }
 .mobile-app .phone {
   text-align: center;
@@ -266,7 +258,7 @@ html {
   color: #ffd600;
 }
 .round-border {
-  border: 4px solid #204F80;
+  border: 4px solid $blue-1;
   border-radius: 4px;
 }
 #map {
@@ -289,8 +281,8 @@ html {
 }
 .footer ul {
   margin-top: 40px;
-/*  margin-right: auto;
-  margin-left: auto;*/
+  // margin-right: auto;
+  // margin-left: auto;
   width: inherit;
 }
 .footer .navi li{
@@ -299,13 +291,14 @@ html {
   opacity: .3;
   font-size: 28px;
 }
+
 /* Sections based on screen size*/
 @media (min-width: 0px){
   #header-container {
-      /*height: 400px;*/
+    // height: 400px;
   }
   .hacknc-body {
-    background-color: #2C2C31;
+    background-color: $gray;
   }
   .apply {
     padding-top: 220px;
@@ -328,7 +321,7 @@ html {
   }
   .navi li {
     font-size: 18px;
-    /*width: 85px;*/
+    // width: 85px;
     padding-left: 20px;
     margin-top: -8px;
   }
@@ -345,17 +338,17 @@ html {
 }
 @media (min-width: 768px){
   .stay-tuned {
-    /*border: 10px solid #204F80;*/
+    // border: 10px solid $blue-1;
     margin-top: 0px;
   }
   #header-container {
-      /*height: 600px;*/
+    // height: 600px;
   }
   .hacknc-body {
-    background-color: #5FB1FC;
+    background-color: $blue-4;
   }
   .apply {
-    /*padding-top: 23%;*/
+    // padding-top: 23%;
     padding-top: 0px;
     top: 42%;
     position: fixed;
@@ -371,15 +364,15 @@ html {
   }
   .navi li {
     font-size: 22px;
-    /*width: 100px;*/
+    // width: 100px;
     padding-left: 40px;
     margin-top: 0px;
   }
   #navbar {
-    /*bottom: 0px;*/
+    // bottom: 0px
     top: initial;
-    background-color: #2C2C31;
-    border-bottom: 3px solid #272727;
+    background-color: $gray;
+    border-bottom: 3px solid $light-gray;
   }
   .footer .navi{
     display: block;
@@ -387,11 +380,11 @@ html {
 }
 @media (min-width: 1170px){
   #header-container {
-    /*height: 850px;*/
+    // height: 850px;
   }
   .apply {
-    /*padding-top: 340px;*/
-    /*top:40%;*/
+    // padding-top: 340px;
+    // top:40%;
   }
   #navbar {
     padding-top: 15px;
@@ -405,7 +398,7 @@ html {
 }
 
 .black {
-  background-color: black;
+  background-color: $black;
 }
 
 .centered {
