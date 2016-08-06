@@ -1,0 +1,38 @@
+@import url("https://cdn-images.mailchimp.com/embedcode/classic-10_7.css");
+
+#mc-embedded-subscribe{
+  font-family: $header-font;
+}
+#mc_embed_signup{
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+  color:#2C2C31;
+  font-size: 20px;
+  margin-top: 0px;
+  font-family: $header-font;
+  label{
+    color:  #ffd600;
+    font-family: $header-font-cursive;
+    font-size: 27px;
+  }
+  .mc-field-group {
+    width: 100%;
+  }
+  .indicates-required {
+    color: #FFFFFF;
+  }
+  .button {
+    background-color:#ffd600;
+    font-size: 27px;
+    height: 40px;
+    margin-top: 20px;
+  }
+  #mce-success-response {
+    color:#FFFFFF;
+    font-weight: normal;
+    font-size: 17px;
+  }
+  form{
+  padding : 0px;
+  }
+}
