@@ -15,12 +15,10 @@ var concat = require('gulp-concat'),
 var compiler = {}
 
 // Clean /out directory
-compiler.clean = function(cb) {
-  var deferred = when.defer()
+compiler.clean = function(done) {
   rimraf('./out/**/*', function(){
-    return deferred.resolve();
-  })
-  return deferred.promise
+    done()
+  });
 }
 
 // Compile Jade -> HTML
@@ -81,23 +79,22 @@ compiler.static = function(){
 }
 
 // Clear directory and compile all
-compiler.all = function(){
+compiler.all = function(done){
   when.all([
     compiler.jade(),
     compiler.scss(),
     compiler.js(),
     compiler.images(),
     compiler.static()
-  ])
+  ]).then(function(){
+    done()
+  });
 }
 
 // Deploy to gh-pages branch
 var deploy = function(){
-  var deferred = when.defer()
-  gulp.src('./out/**/*')
+  return gulp.src('./out/**/*')
     .pipe( githubPages() )
-    .on('end', deferred.resolve)
-  return deferred.promise
 }
 
 // Start a HTTP server on --port (defaults to 8000) and watch for changes
