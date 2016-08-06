@@ -55,6 +55,7 @@ function mobileinit() {
         $(".navi").addClass("relative");
         $("#navbar").css("top", "460px")
         $('#navbar').css("bottom", "auto")
+        $('.anchor').css("top", "0");
     } else {
         //setup for desktop browsers
         console.log("Full Browser Detected");
