@@ -80,7 +80,6 @@ a {
   background-repeat: no-repeat;
   background-position: center top;   
   width: 100%;
-  margin-bottom: 20px;
 }
 #header-container {
   background-image: url("../img/medium-landing/layer1.png");
@@ -189,7 +188,7 @@ a {
       text-decoration: none;
     }
     h2 {
-      margin-top: 30px;
+      margin-top: 20px;
       font-family: $header-font-cursive;
       font-size: 45px;
       background-image: url("../img/header1.png");
@@ -209,7 +208,7 @@ a {
 
 .social-shell {
   ul.social-media {
-    margin-top: 60px;
+    margin-top: 42px;
     font-family: $header-font-cursive;
     font-size: 30px;
     // background-color: $gray;
