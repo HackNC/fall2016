@@ -8,6 +8,10 @@ gem install sass
 brew install node
 npm install
 ```
+Optionally, install gulp cli tools.
+```
+npm install --global gulp-cli
+```
 
 ## Development
 This website uses [gulp](http://gulpjs.com) as a build tool to compile assets and deploy the site. Here's the stuff you need to know:
