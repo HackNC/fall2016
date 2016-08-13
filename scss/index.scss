@@ -80,7 +80,6 @@ a {
   background-repeat: no-repeat;
   background-position: center top;   
   width: 100%;
-  margin-bottom: 20px;
 }
 #header-container {
   background-image: url("../img/medium-landing/layer1.png");
@@ -189,7 +188,7 @@ a {
       text-decoration: none;
     }
     h2 {
-      margin-top: 30px;
+      margin-top: 20px;
       font-family: $header-font-cursive;
       font-size: 45px;
       background-image: url("../img/header1.png");
@@ -209,21 +208,45 @@ a {
 
 .social-shell {
   ul.social-media {
-    margin-top: 60px;
+    margin-top: 20px;
     font-family: $header-font-cursive;
-    font-size: 30px;
+    font-size: 23px;
+    text-align: center;
     // background-color: $gray;
     height: 100%;
-    width: 250px;
+    width: 100%;
     padding-left: 0px;
     li {
       list-style-type: none;
+      margin-left: 10px;
+      margin-right: 10px;
+      display: inline-block;
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
       a {
         text-decoration: none;
         color: $white;
       }
       .fa {
         color: $yellow;
+      }
+    }
+  }
+  .ram-sprite {
+    width: 196px;
+    height:196px;
+  }
+  #info-box{
+    margin: 30px 0px;
+    p {
+      &#info {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 24px;
+      font-family: $header-font-cursive;
+      font-weight: 700;
+      text-align: center;
       }
     }
   }

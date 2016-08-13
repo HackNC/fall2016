@@ -9,8 +9,8 @@
 .shell.blue.social-shell
   #social.anchor
   .container
-    .social-media.subsection.row
-      .col-xs-6.col-xs-offset-0.col-sm-4.col-sm-offset-2
+    row.social-media.subsection
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.col-sm-12
         ul.social-media.centered
           li: a(href='https://www.facebook.com/thehacknc/?fref=ts')
               i.fa.fa-facebook-official
@@ -24,7 +24,12 @@
           li: a(href='https://twitter.com/thehacknc')
               i.fa.fa-twitter-square
               |  @TheHackNC
-      #mission-statment-ram.col-xs-6.col-sm-4
+      .col-xs-12.col-xs-offset-0.col-sm-6.col-md-5.col-md-offset-1.col-lg-4.col-lg-offset-2
+        #info-box
+          p#info UNC Chapel Hill 
+          p#info Fetzer Gymnasium
+          p#info October 28 - 30, 2016
+      .col-xs-12.col-sm-5.col-md-4.col-lg-3
         img.centered.ram-sprite(src='img/ram-animated-256px.gif')
 
 .shell.gray.about-shell
@@ -32,7 +37,7 @@
   .container
     // Do we want columns?
     // There should be an outer div here to take up the page width.  Then an innter div with the main content.
-    .mission-statment.subsection.row
+    row.mission-statment.subsection
       .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.content
         h2 Begin an adventure
         p HackNC is a weekend for students of all skill levels to broaden their talents. Your challenge is to make an awesome project in just 24 hours. You will have access to hands-on demos and workshops from our sponsors as well as exciting talks about the awesome things happening right now with computer science. During your time here you can enjoy all the free food, clothes, stickers, water bottles, computer accessories, and other miscellanea that you have ever desired.
