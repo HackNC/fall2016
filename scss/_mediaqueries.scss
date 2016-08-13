@@ -42,12 +42,19 @@
   .ram-sprite {
     display: none;
   }
+  #mlh-trust-badge {
+    display:none;
+  }
 }
 @media (min-width: 550px) {
+  #mlh-trust-badge {
+    display: block;
+    position: absolute;
+  }
   .ram-sprite {
     display: block;
   }
-  #info-box: {
+  #info-box {
     width: 100%;
   }
 }
@@ -105,6 +112,9 @@
   #navbar {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+  #mlh-trust-badge {
+    position:fixed;
   }
 }
 @media (min-width: 1400px){

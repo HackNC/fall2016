@@ -124,7 +124,17 @@ a {
     // display: block;
   }
 }
-
+#mlh-trust-badge {
+  max-width:100px;
+  min-width:60px;
+  top:0;
+  left:50px;
+  width:10%;
+  z-index:10000;
+  img {
+    width: 100%;
+  }
+}
 .apply {
   width: 100%;
   display: block;
