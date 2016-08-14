@@ -4,4 +4,21 @@
   p {
     font-size: 16px;
   }
+  ul{
+    li {
+      font-size: 16px;
+    }
+  }
+  a {
+    color: $blue-2;
+    &:hover{
+        color: $blue-3;
+        text-decoration: underline;
+    }
+    &:visited{
+
+    }
+  }
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

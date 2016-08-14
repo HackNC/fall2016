@@ -1,157 +1,60 @@
-An h1 header
-============
+# Travel
 
-Paragraphs are separated by a blank line.
+We've got all the info you might ever need to know about travel to HackNC.  For example, horses are bad for interstate travel.  Did you know that?
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
+# Location and Parking
 
-  * this one
-  * that one
-  * the other one
+We have a new venue this year!  HackNC will be hosted in Fetzer Gymnasium, in central campus at The University of North Carolina at chapel Hill.  Our address is:
+```
+210 South Road
+Chapel Hill, NC 27599
+```
 
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
+Free parking is available over the weekend at the following lots and decks, in order of proximity to the event:
+* [Bell Tower Parking Deck](https://www.google.com/maps/dir/Bell+Tower+Parking+Deck,+Chapel+Hill,+NC+27514,+United+States/35.9097032,-79.0527534/@35.9085196,-79.0539276,17z/data=!4m9!4m8!1m5!1m1!1s0x89acc2eedc3bd00f:0x2dd3a16fc7f5b0c9!2m2!1d-79.0500869!2d35.9067152!1m0!3e2)
+* [Cobb Parking Deck](https://www.google.com/maps/dir/Department+of+Computer+Science,+Chapel+Hill,+NC+27514/Cobb+Parking+Deck,+Chapel+Hill,+NC+27514/@35.9107855,-79.0515577,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89acc2e89e40c0c1:0x38fa53cf078c0e56!2m2!1d-79.0531119!2d35.9097319!1m5!1m1!1s0x89acc2ea68ddf24b:0x38f6620f02eadfae!2m2!1d-79.0456262!2d35.9117533!3e2)
+* [Venable Parking Lot](https://www.google.com/maps/dir/35.9095348,-79.052167/35.9097177,-79.0527597/@35.9086153,-79.0552597,17z/data=!4m2!4m1!3e2)
+* [Nash Parking Lot](https://www.google.com/maps/dir/35.9086992,-79.0555626/35.9097177,-79.0527597/@35.9095276,-79.0560474,18z/data=!4m2!4m1!3e2)
+* [FedEx Global Education Center Parking Deck](https://www.google.com/maps/dir/35.9077494,-79.0538099/35.9097177,-79.0527597/@35.9087812,-79.0552089,17z/data=!4m2!4m1!3e2)
 
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
+---
 
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
+# Travel Reimbursements
 
+## Carpools
 
+A carpool consists of 3 or more students intending to participate in HackNC.
 
-An h2 header
-------------
+If you were accepted on or before September 19th, your carpool is automatically approved for a grant equivalent to the cost of gas, not to exceed $0.10/mile. Limit one per carpool. Qualifications for carpool grants are as follows:
 
-Here's a numbered list:
+* RSVP by deadline through our registration system.
+* Bring a car with at least 3 occupants.
+* Stay for the entire duration of hacking.
 
- 1. first item
- 2. second item
- 3. third item
+## Large Vans
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
+Contact us if you are looking to coordinate a van of 6 or more. Email travel@hacknc.com or join our slack. The process of receiving your grant is similar to normal carpools.
 
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
+## Other Options
 
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
+HackNC has a limited number of $50 grants available to supplement the cost of bus/train/plane tickets. Email us at travel@hacknc.com before booking to confirm availability.
 
-~~~
-define foobar() {
-    print "Welcome to flavor country!";
-}
-~~~
+## Chartered Busses
 
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
+Unfortunaltly HackNC will not be chartering busses this year.
 
-~~~python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-~~~
+---
 
+# Lodging
 
+Dedicated sleeping spaces will be provided within our venue.  Please bring yourself a sleeping bag, blanket, or whatever else you need to get a good night's rest.
 
-### An h3 header ###
+If you'll be needing a hotel, there are options nearby.  Reach out with an email or ping us on slack, and we can point you in the right direction.
 
-Now a nested list:
+If you're traveling and must arrive on Friday, October 28, we will be providing sleeping space at our home base in Sitterson Hall.  
 
- 1. First, get these ingredients:
+---
 
-      * carrots
-      * celery
-      * lentils
+# Questions?
 
- 2. Boil some water.
-
- 3. Dump everything in the pot and follow
-    this algorithm:
-
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
-
-    Do not bump wooden spoon or it will fall.
-
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
-
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
-
-[^1]: Footnote text goes here.
-
-Tables can look like this:
-
-size  material      color
-----  ------------  ------------
-9     leather       brown
-10    hemp canvas   natural
-11    glass         transparent
-
-Table: Shoes, their sizes, and what they're made of
-
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
-
---------  -----------------------
-keyword   text
---------  -----------------------
-red       Sunsets, apples, and
-          other red or reddish
-          things.
-
-green     Leaves, grass, frogs
-          and other things it's
-          not easy being.
---------  -----------------------
-
-A horizontal rule follows.
-
-***
-
-Here's a definition list:
-
-apples
-  : Good for making applesauce.
-oranges
-  : Citrus!
-tomatoes
-  : There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)
-
-Here's a "line block":
-
-| Line one
-|   Line too
-| Line tree
-
-and images can be specified like so:
-
-![example image](example-image.jpg "An exemplary image")
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+If you have any questions about travel, shoot us an email at travel@hacknc.com or join our slack!
