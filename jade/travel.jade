@@ -6,14 +6,16 @@ html
     link(rel='shortcut icon', type='image/ico', href='https://hacknc.com/img/favicon.ico')
     link(rel='stylesheet', href='css/index.css')
     script(type='text/javascript', src='js/main.js')
-    script load_markdown(document.getElementById("travel-content"));
+    script load_markdown("travel-content");
 
   body.hacknc-body
     
     include ./shared/_external_header.jade
-
-    include ./shared/_navbar.jade
     
-    #travel-content
+    .shell
+      .container
+        .row
+          .col-sm-12
+            #travel-content
 
     include ./shared/_footer.jade

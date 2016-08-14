@@ -120,8 +120,17 @@ function buttonCheckScroll(){
         button.css("display", "inline-block");
     } 
 }
-function load_markdown(div){
-    jQuery.get('/markdown/travel.md', function(data) {
-        div.innerHTML = markdown.toHTML(data);
+function load_markdown(divstring){
+    $(window).load(function(){
+        var elem = document.getElementById(divstring);
+        console.log(elem);
+        var callback = function(data){
+            var converter = new showdown.Converter(),
+            text      = data;
+            html      = converter.makeHtml(text);
+            console.log(html);
+            elem.innerHTML = html;  
+        }
+        $.get('/markdown/travel.md', callback);
     });
 }
