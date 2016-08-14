@@ -340,8 +340,11 @@ a {
 .footer-shell {
   p {
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     opacity: .4;
+    &.gitlink {
+      font-size: 14px;
+    }
   }
   img {
     opacity: .5;
