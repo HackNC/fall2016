@@ -1,5 +1,18 @@
 @import 'colors';
 
+#header {
+  background-color: $gray;
+
+  img{
+    &.header-img {
+      height: 300px;
+      display: block;
+      margin: 0 auto;
+      margin-top: -30px;
+    }
+  }
+}
+
 .markdown {
   p {
     font-size: 16px;
@@ -19,6 +32,10 @@
 
     }
   }
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+iframe {
+  margin-bottom: -5px;
 }
