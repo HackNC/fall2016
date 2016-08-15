@@ -6,7 +6,6 @@ html
     link(rel='shortcut icon', type='image/ico', href='https://hacknc.com/img/favicon.ico')
     link(rel='stylesheet', href='css/index.css')
     script(type='text/javascript', src='js/main.js')
-    script load_markdown("resource-content", "/markdown/resources.md");
 
   body.external
     
@@ -18,6 +17,6 @@ html
       .container
         .row
           .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-            #resource-content
+            include ./markdown/resources.html
 
     include ./shared/_footer.jade

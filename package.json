@@ -27,5 +27,8 @@
     "node-static": "^0.7.8",
     "rimraf": "^2.5.4",
     "when": "^3.7.7"
+  },
+  "devDependencies": {
+    "gulp-markdown": "^1.2.0"
   }
 }
