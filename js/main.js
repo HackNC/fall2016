@@ -76,11 +76,6 @@ function faqinit(){
             $(this).animate({"height": "250px"}, 200).addClass("toggled");
             $(this).children(".faq-body").slideDown(200);
         }
-        /*$(this).children(".faq-body").slideToggle("slow", function(){
-          if($(this).hasClass("toggled")){
-              $(this).animate({"height" : "330px"});
-          }  
-        });*/
     });
 }
 function navbarinit(){

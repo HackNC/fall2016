@@ -36,6 +36,19 @@
   margin-bottom: 30px;
 }
 
-iframe {
-  margin-bottom: -5px;
+body {
+  &.external{
+    iframe {
+      margin-bottom: -5px;
+    }
+    
+    #navbar {
+      padding-top: 0px;
+      &.relative {
+        position: relative;
+      }
+      background-color: $gray;
+      top: 0px;
+    }
+  }
 }
