@@ -4,7 +4,7 @@ We've got all the info you might ever need to know about travel to HackNC.  For 
 
 # Location and Parking
 
-We have a new venue this year!  HackNC will be hosted in Fetzer Gymnasium, in central campus at The University of North Carolina at chapel Hill.  Our address is:
+We have a new venue this year!  HackNC will be hosted in Fetzer Gymnasium, in central campus at The University of North Carolina at Chapel Hill.  Our address is:
 ```
 210 South Road
 Chapel Hill, NC 27599
@@ -39,9 +39,12 @@ Contact us if you are looking to coordinate a van of 6 or more. Email travel@hac
 
 HackNC has a limited number of $50 grants available to supplement the cost of bus/train/plane tickets. Email us at travel@hacknc.com before booking to confirm availability.
 
-## Chartered Busses
+## Chartered Buses
 
-Unfortunaltly HackNC will not be chartering busses this year.
+Currently, HackNC is considering sponsoring buses for the following areas.  Please note that we are still in the preliminary stages of this process, and cannot guarantee that buses will be available.  We especially encourage students from these areas to apply for HackNC.
+
+* The University of Maryland at College Park
+* Georgia Tech 
 
 ---
 
@@ -49,7 +52,7 @@ Unfortunaltly HackNC will not be chartering busses this year.
 
 Dedicated sleeping spaces will be provided within our venue.  Please bring yourself a sleeping bag, blanket, or whatever else you need to get a good night's rest.
 
-If you'll be needing a hotel, there are options nearby.  Reach out with an email or ping us on slack, and we can point you in the right direction.
+If you'll be needing a hotel, there are options nearby.  Reach out with an email and we can point you in the right direction.  Keep in mind that they can be expensive and our funding won't allow us to cover the cost.
 
 If you're traveling and must arrive on Friday, October 28, we will be providing sleeping space at our home base in Sitterson Hall.  
 
@@ -57,4 +60,4 @@ If you're traveling and must arrive on Friday, October 28, we will be providing 
 
 # Questions?
 
-If you have any questions about travel, shoot us an email at travel@hacknc.com or join our slack!
+If you have any questions about travel, shoot us an email at [travel@hacknc.com](mailto:travel@hacknc.com).
