@@ -1,6 +1,7 @@
 @import 'bootstrap/bootstrap';
 @import 'fonts';
 @import 'colors';
+@import 'external';
 
 html {
   height: 100%;
@@ -140,16 +141,16 @@ a {
   display: block;
   position: relative;
   display: none;
-  #apply-button {
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-  }
   h3 {
     text-align: center;
     font-family: $header-font;
     color: $white;
   }
+}
+#apply-button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
   .btn {
     background-color: $yellow;
     color: $blue-1;
@@ -162,6 +163,19 @@ a {
     &:hover {
       color: $white;
     }
+  }
+}
+.apply-section {
+  ol{
+    li {
+      font-size: 1.3em;
+      line-height: 1.9em;
+    }
+  }
+  .btn {
+    margin-top: 30px;
+    vertical-align: middle;
+    float: left;
   }
 }
 
@@ -356,7 +370,7 @@ a {
     }
   }
   ul.navi {
-    margin-top: 40px;
+    margin-top: 10px;
     // margin-right: auto;
     // margin-left: auto;
     width: inherit;
@@ -364,7 +378,7 @@ a {
       display: list-item;
       clear: both;
       opacity: .3;
-      font-size: 28px;
+      font-size: 24px;
     }
   }
 }

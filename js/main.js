@@ -76,11 +76,6 @@ function faqinit(){
             $(this).animate({"height": "inherit"}, 200).addClass("toggled");
             $(this).children(".faq-body").slideDown(200); 
         }
-        /*$(this).children(".faq-body").slideToggle("slow", function(){
-          if($(this).hasClass("toggled")){
-              $(this).animate({"height" : "330px"});
-          }  
-        });*/
     });
 }
 function navbarinit(){
@@ -119,4 +114,18 @@ function buttonCheckScroll(){
     } else {
         button.css("display", "inline-block");
     } 
+}
+function load_markdown(divstring, mdpath){
+    $(window).load(function(){
+        var elem = document.getElementById(divstring);
+        console.log(elem);
+        var callback = function(data){
+            var converter = new showdown.Converter(),
+            text      = data;
+            html      = converter.makeHtml(text);
+            console.log(html);
+            elem.innerHTML = html;  
+        }
+        $.get(mdpath, callback);
+    });
 }

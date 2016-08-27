@@ -27,7 +27,7 @@
   .navi li {
     font-size: 18px;
     // width: 85px;
-    padding-left: 20px;
+    padding-left: 12px;
     margin-top: -8px;
   }
   #navbar {
@@ -45,6 +45,9 @@
   #mlh-trust-badge {
     display:none;
   }
+  .extra {
+    display:none;
+  }
 }
 @media (min-width: 550px) {
   #mlh-trust-badge {
@@ -56,6 +59,13 @@
   }
   #info-box {
     width: 100%;
+  }
+  .extra {
+    display:block;
+  }
+  .navi li {
+    font-size: 20px;
+    padding-left: 23px;
   }
 }
 
