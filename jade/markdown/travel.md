@@ -27,7 +27,7 @@ A carpool consists of 3 or more students intending to participate in HackNC.
 
 If you were accepted on or before September 19th, your carpool is automatically approved for a grant equivalent to the cost of gas, not to exceed $0.10/mile. Limit one per carpool. Qualifications for carpool grants are as follows:
 
-* RSVP by deadline through our registration system.
+* RSVP by the deadline through our registration system.
 * Bring a car with at least 3 occupants.
 * Stay for the entire duration of hacking.
 
