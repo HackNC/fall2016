@@ -48,6 +48,10 @@
   .extra {
     display:none;
   }
+  #header img.header-img{
+    width: 100%;
+    height: auto;
+  }
 }
 @media (min-width: 550px) {
   #mlh-trust-badge {
@@ -109,6 +113,10 @@
   }
   .footer .navi{
     display: block;
+  }
+  #header img.header-img{
+    width: auto;
+    height: 300px;
   }
 }
 @media (min-width: 1170px){
