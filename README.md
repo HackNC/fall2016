@@ -8,10 +8,6 @@ gem install sass
 brew install node
 npm install
 ```
-Optionally, install gulp cli tools.
-```
-npm install --global gulp-cli
-```
 
 ## Development
 This website uses [gulp](http://gulpjs.com) as a build tool to compile assets and deploy the site. Here's the stuff you need to know:
@@ -30,7 +26,7 @@ gulp static		# Moves static/**/* to out/
 ```
 
 ### Git style
-Do your work in feature branches, and when you're done submit a pull request to `development`.  When it's ready, development will be merged into master, and then into production (gh-pages)
+Do your work in feature branches, and when you're done submit a pull request to `master`.
 
 ### Naming Conventions
 In most directories, filenames that begin with underscores are partials. They are not compiled or placed in `/out`, but they are often loaded by scss, jade, or js files.

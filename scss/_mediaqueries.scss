@@ -27,7 +27,7 @@
   .navi li {
     font-size: 18px;
     // width: 85px;
-    padding-left: 12px;
+    padding-left: 20px;
     margin-top: -8px;
   }
   #navbar {
@@ -38,38 +38,6 @@
   }
   .footer .navi{
     display: none;
-  }
-  .ram-sprite {
-    display: none;
-  }
-  #mlh-trust-badge {
-    display:none;
-  }
-  .extra {
-    display:none;
-  }
-  #header img.header-img{
-    width: 100%;
-    height: auto;
-  }
-}
-@media (min-width: 550px) {
-  #mlh-trust-badge {
-    display: block;
-    position: absolute;
-  }
-  .ram-sprite {
-    display: block;
-  }
-  #info-box {
-    width: 100%;
-  }
-  .extra {
-    display:block;
-  }
-  .navi li {
-    font-size: 20px;
-    padding-left: 23px;
   }
 }
 
@@ -114,10 +82,6 @@
   .footer .navi{
     display: block;
   }
-  #header img.header-img{
-    width: auto;
-    height: 300px;
-  }
 }
 @media (min-width: 1170px){
   #header-container {
@@ -130,9 +94,6 @@
   #navbar {
     padding-top: 15px;
     padding-bottom: 15px;
-  }
-  #mlh-trust-badge {
-    position:fixed;
   }
 }
 @media (min-width: 1400px){
