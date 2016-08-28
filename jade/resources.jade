@@ -3,22 +3,20 @@ html
   head
     include ./shared/_meta.jade
     link(rel='shortcut icon', type='image/ico', href='/img/favicon.ico')
+    link(rel='shortcut icon', type='image/ico', href='https://hacknc.com/img/favicon.ico')
     link(rel='stylesheet', href='css/index.css')
     script(type='text/javascript', src='js/main.js')
-    script $(window).load(init);
 
-  body.hacknc-body
+  body.external
     
-    include ./homepage/_header.jade
+    include ./shared/_external_header.jade
 
     include ./shared/_navbar.jade
     
-    include ./homepage/_info.jade
-    
-    include ./homepage/_faq.jade
-        
-    include ./homepage/_sponsors.jade
-    
-    include ./homepage/_apply.jade
+    .shell.markdown
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+            include:marked ./markdown/resources.md
 
     include ./shared/_footer.jade
