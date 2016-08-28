@@ -52,11 +52,9 @@ function mobileinit() {
         $(".apply").css("position", "relative");
         $(".parallax").css("display", "none");
         $(".mobile-no-parallax").css("display", "block");
-        $("#navbar").removeClass("relative");
-        $("#navbar").css('top', '1px');
-        $('.parallax').remove();
-        $('parallax-mirror').remove();
-        $('#navbar').css("bottom", "auto");
+        $(".navi").addClass("relative");
+        $("#navbar").css("top", "460px")
+        $('#navbar').css("bottom", "auto")
         $('.anchor').css("top", "0");
     } else {
         //setup for desktop browsers
@@ -70,12 +68,17 @@ function mobileinit() {
 function faqinit(){
     $(".faq").click(function(){
         if($(this).hasClass("toggled")) {
-            $(this).children(".faq-body").slideUp(200);
-            $(this).animate({"height": "100%"}, 200).removeClass("toggled");
+            $(this).children(".faq-body").slideUp();
+            $(this).animate({"height": "100%"}).removeClass("toggled");
         } else {
-            $(this).animate({"height": "inherit"}, 200).addClass("toggled");
-            $(this).children(".faq-body").slideDown(200); 
+            $(this).animate({"height": "250px"}).addClass("toggled");
+            $(this).children(".faq-body").slideDown();
         }
+        /*$(this).children(".faq-body").slideToggle("slow", function(){
+          if($(this).hasClass("toggled")){
+              $(this).animate({"height" : "330px"});
+          }  
+        });*/
     });
 }
 function navbarinit(){
@@ -114,18 +117,4 @@ function buttonCheckScroll(){
     } else {
         button.css("display", "inline-block");
     } 
-}
-function load_markdown(divstring, mdpath){
-    $(window).load(function(){
-        var elem = document.getElementById(divstring);
-        console.log(elem);
-        var callback = function(data){
-            var converter = new showdown.Converter(),
-            text      = data;
-            html      = converter.makeHtml(text);
-            console.log(html);
-            elem.innerHTML = html;  
-        }
-        $.get(mdpath, callback);
-    });
 }

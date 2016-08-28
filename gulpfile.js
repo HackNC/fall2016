@@ -9,8 +9,7 @@ var concat = require('gulp-concat'),
     rimraf = require('rimraf'),
     sass = require('gulp-ruby-sass'),
     util = require('gulp-util'),
-    when = require('when'),
-    markdown = require('gulp-markdown')
+    when = require('when')
 
 /**** Compiler tasks ****/
 var compiler = {}
@@ -79,22 +78,9 @@ compiler.static = function(){
   return deferred.promise
 }
 
-// Compile markdown
-compiler.md = function(){
-  console.log("Compiling markdown assets...")
-  var deferred = when.defer()
-  gulp.src('./jade/markdown/*.md')
-    .pipe(markdown())
-    .pipe(gulp.dest('./jade/markdown_out'))
-    .pipe(livereload())
-    .on('end', deferred.resolve)
-  return deferred.promise
-}
-
 // Clear directory and compile all
 compiler.all = function(done){
   when.all([
-    compiler.md(),
     compiler.jade(),
     compiler.scss(),
     compiler.js(),

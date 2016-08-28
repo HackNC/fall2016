@@ -2,7 +2,7 @@ doctype html
 html
   head
     include ./shared/_meta.jade
-    link(rel='shortcut icon', type='image/ico', href='/img/favicon.ico')
+    
     link(rel='stylesheet', href='css/index.css')
     script(type='text/javascript', src='js/main.js')
     script $(window).load(init);
@@ -19,6 +19,7 @@ html
         
     include ./homepage/_sponsors.jade
     
-    include ./homepage/_apply.jade
+    include ./homepage/_mailchimp.jade
 
     include ./shared/_footer.jade
+
