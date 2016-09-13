@@ -22,6 +22,8 @@ Here are a few resources to help you get started on your project!
 * [Python](http://docs.python-guide.org/en/latest/intro/learning)
 * [Node.js](http://blog.modulus.io/absolute-beginners-guide-to-nodejs)
 * [Java](http://www.javaworld.com/article/2076075/learn-java/core-java-learn-java-from-the-ground-up.html)
+* [Reference Cards](https://dzone.com/refcardz)
+* [Software Guides](https://dzone.com/guides)
 
 ---
 
