@@ -18,7 +18,7 @@ Free parking is available over the weekend everywhere on campus, but we recommen
 
 # When Should I Arrive?
 
-Plan to arrive after 5pm Friday but before 8am Saturday. Sleeping spaces will be available Friday night, but talks, hacking, and meals don't begin until Saturday.
+Plan to arrive after 5pm Friday but before 8am Saturday. Sleeping spaces will be available Friday night, but talks and hacking don't begin until Saturday.
 
 ---
 
@@ -28,26 +28,40 @@ Plan to arrive after 5pm Friday but before 8am Saturday. Sleeping spaces will be
 
 A carpool consists of 3 or more students intending to participate in HackNC.
 
-If you were accepted on or before October 1st, your carpool is automatically approved for a grant equivalent to at least the cost of gas, but not to exceed $0.10/mile. Limit one per carpool. Qualifications for carpool grants are as follows:
+If you were accepted on or before October 1st, your carpool is automatically eligible for reimbursement of the value detailed below, which roughly corresponds to the round trip cost of gas. Limit one per carpool. Qualifications for carpool grants are as follows:
 
-* RSVP by the deadline through our registration system.
-* Bring a car with at least 3 occupants (you count as an occupant!).
-* Stay for the entire duration of hacking.
+* RSVP via the link in your email
+* Drive yourself and at least 2 passengers to HackNC.
+* Submit a project at the end of HackNC.
+* Talk to travel reimbursement coordinators during HackNC.
+
+### Carpool grant amounts
+
+| Max one-way distance | Grant Amount |
+| ---                  | ---          |
+|0 - 50 miles          | $0           |
+|51 - 100 miles        | $20          |
+|101 - 200 miles       | $40          |
+|201 - 300 miles       | $60          |
+|301 - 400 miles       | $80          |
+|401+ miles            | $100         |
+
+
+We cannot make exceptions to this policy. Grants will be distributed after the event by mail.
 
 ## Large Vans
 
 Email [travel@hacknc.com](mailto:travel@hacknc.com) if you are looking to coordinate a van of 6 or more. The process of receiving your grant is similar to normal carpools.
 
+
 ## Other Options
 
-HackNC has a limited number of $50 grants available to supplement the cost of bus/train/plane tickets. Email us at travel@hacknc.com before booking to confirm availability.
+HackNC has a limited number of $50 grants available to supplement the cost of bus/train/plane tickets.  These vouchers will be available on a first come, first serve basis.  A link to request a trave grant will be included in HackNC acceptance emails.
+
 
 ## Chartered Buses
 
-Currently, HackNC is exploring sponsoring buses for the following areas. Please note that because carpools are many times more economical for us, we cannot guarantee that buses will be available. Regardless, we especially encourage students near these schools to apply for HackNC:
-
-* The University of Maryland at College Park
-* Georgia Tech 
+We are working on getting a bus sent to Georgia Tech. If successful, all Georgia Tech applicants will be notified!
 
 ---
 
