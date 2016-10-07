@@ -189,6 +189,9 @@ a {
 .shell {
   width: 100%;
   z-index: 10;
+  &.white {
+    background-color: $white;
+  }
   &.blue {
     background-color: $blue-2;
   }
@@ -349,8 +352,54 @@ a {
       color: $yellow;
     }
   }
+    
+  .logo-container{
+  text-align: center;
+  }
+  img {
+    display:inline-block;
+    &.one {
+      height: 65%;
+      width: 65%;
+    }
+    &.two {
+      height: 30%;
+      width: 30%;
+    }
+  }
 }
 
+.schedule-shell {
+  table {
+    width: 100%;
+    font-size: 1.3em;
+    td {
+      padding: 4px 10px;
+      &.time {
+        width: 130px;
+      }
+      &.event {
+        min-width: 280px;
+      }
+      &.place {
+        min-width: 100px;
+      }
+      &.daycell {
+        background-color: $gray;
+        padding: 4px 0;
+      }
+    }
+    tr {
+      &.day {
+        font-size: 1.7em;
+        font-weight: 600;
+      }
+    }
+    tr:nth-child(even) {
+      background-color: $table-gray;
+    }
+  }
+}
 .footer-shell {
   p {
     text-align: center;
