@@ -57,7 +57,7 @@ We cannot make exceptions to this policy. Grants will be distributed after the e
 
 ## Travel Vouchers
 
-HackNC has a limited number of $50 grants available to supplement the cost of bus/train/plane tickets.  These vouchers will be available on a first-come, first-served basis.  A link to request a travel grant will be included in HackNC acceptance emails.  Note that travel vouchers are only available to hackers traveling from OUTSIDE the NC Triangle (UNC / NC State / Duke / etc.)
+HackNC has a limited number of $50 grants available to supplement the cost of bus/train/plane tickets.  These vouchers will be available on a first-come, first-served basis.  A link to request a travel grant will be included in HackNC acceptance emails.  Note that travel vouchers are only available to hackers traveling from OUTSIDE the NC Triangle (UNC / NC State / Duke / etc.).  Please check your acceptance email for instructions to request a travel voucher.
 
 ## Drive Myself 
 
