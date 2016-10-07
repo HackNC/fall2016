@@ -28,7 +28,7 @@ Plan to arrive after 5pm Friday but before 8am Saturday. Sleeping spaces will be
 
 A carpool consists of 3 or more students intending to participate in HackNC.
 
-If you were accepted on or before October 1st, your carpool is automatically eligible for reimbursement of the value detailed below, which roughly corresponds to the round trip cost of gas. Limit one per carpool. Qualifications for carpool grants are as follows:
+If you were accepted, your carpool is automatically eligible for reimbursement of the value detailed below, which roughly corresponds to the round trip cost of gas. Limit one per carpool. Qualifications for carpool grants are as follows:
 
 * RSVP via the link in your email
 * Drive yourself and at least 2 passengers to HackNC.
@@ -56,7 +56,7 @@ Email [travel@hacknc.com](mailto:travel@hacknc.com) if you are looking to coordi
 
 ## Other Options
 
-HackNC has a limited number of $50 grants available to supplement the cost of bus/train/plane tickets.  These vouchers will be available on a first come, first serve basis.  A link to request a trave grant will be included in HackNC acceptance emails.
+HackNC has a limited number of $50 grants available to supplement the cost of bus/train/plane tickets.  These vouchers will be available on a first come, first serve basis.  A link to request a travel grant will be included in HackNC acceptance emails.
 
 
 ## Chartered Buses
@@ -68,6 +68,8 @@ We are working on getting a bus sent to Georgia Tech. If successful, all Georgia
 # Lodging
 
 Dedicated sleeping spaces will be provided within our venue.  Please bring yourself a sleeping bag, blanket, or whatever else you need to get a good night's rest.
+
+We have a limited number of air mattresses to be distributed on a first-come first serve basis (with slight priority to those who specially requested them, and hackers traveling long distances or driving).
 
 If you'll be needing a hotel, there are options nearby.  Reach out with an email and we can point you in the right direction.  Keep in mind that they can be expensive and our funding won't allow us to cover the cost.
 
