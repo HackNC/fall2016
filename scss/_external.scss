@@ -32,8 +32,17 @@
 
     }
   }
+  table {
+    td, th {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-right: 15px;
+    }
+    margin: 20px 0;
+  }
   margin-top: 30px;
   margin-bottom: 30px;
+  font-size: 1.1em;
 }
 
 body {
