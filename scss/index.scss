@@ -354,17 +354,31 @@ a {
   }
     
   .logo-container{
-  text-align: center;
+    text-align: center;
   }
+
   img {
     display:inline-block;
+    padding: 20px 15px;
     &.one {
-      height: 65%;
-      width: 65%;
+      height: 50%;
+      width: 50%;
     }
     &.two {
       height: 30%;
       width: 30%;
+    }
+    &.three {
+      height: 23%;
+      width: 23%;
+    }
+    &.twoandahalf {
+      height: 26%;
+      width: 26%;
+    }
+    &.four {
+      height: 18%;
+      width: 18%;
     }
   }
 }
@@ -379,10 +393,8 @@ a {
         width: 130px;
       }
       &.event {
-        min-width: 280px;
       }
       &.place {
-        min-width: 100px;
       }
       &.daycell {
         background-color: $gray;
