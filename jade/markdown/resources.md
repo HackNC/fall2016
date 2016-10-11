@@ -1,4 +1,3 @@
-
 # Resources
 Need to get started on your project? Want to learn more about our workshops? Well, this is the place to be!
 
