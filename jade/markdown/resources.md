@@ -29,3 +29,14 @@ Here are a few resources to help you get started on your project!
 
 ## Workshops
 Hold tight! Preparations are underway for our workshops at HackNC! Stay tuned...
+
+---
+
+## History
+
+This will be the fourth fantastic HackNC since we started in 2014.  We've grown a ton since then, and we still strive to put on an awesome event and let the hackers do their thing.
+
+* [Spring 2014 - "Purple HackNC"](https://spring2014.hacknc.com/)
+* [Fall 2014 - "Fox HackNC"](https://fall2014.hacknc.com)
+* [Fall 2015 - "Grand HackNC"](https://fall2015.hacknc.com/)
+* [Fall 2016 - This year!](https://hacknc.com/)
