@@ -69,7 +69,7 @@ Email [travel@hacknc.com](mailto:travel@hacknc.com) if you are looking to coordi
 
 ## Chartered Buses
 
-We are working on getting a bus sent to Georgia Tech. If successful, all Georgia Tech applicants will be notified!
+We have confirmed that a bus will be sent to Georgia Institute of Technology.  GT will manage admissions to this bus internally, and GT students (or nearby schools that asked to be informed about the GT bus) should have received an email.  Questions and concerns can be addressed to travel@hacknc.com.
 
 ---
 
