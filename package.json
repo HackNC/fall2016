@@ -32,5 +32,6 @@
   },
   "devDependencies": {
     "gulp-markdown": "^1.2.0"
-  }
+  },
+  "license": "UNLICENSED"
 }
