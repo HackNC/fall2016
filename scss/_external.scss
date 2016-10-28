@@ -64,4 +64,11 @@ body {
 
 .panel {
   margin-top: 40px;
+  a {
+    color: $blue-2;
+    
+    &.btn {
+      color: $white;
+    }
+  }
 }
