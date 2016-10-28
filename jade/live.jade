@@ -1,0 +1,126 @@
+doctype html
+html
+  head
+    include ./shared/_meta.jade
+    link(rel='shortcut icon', type='image/ico', href='/img/favicon.ico')
+    link(rel='shortcut icon', type='image/ico', href='https://hacknc.com/img/favicon.ico')
+    link(rel='stylesheet', href='css/index.css')
+    script(type='text/javascript', src='js/main.js')
+
+  body.external
+    
+    include ./shared/_external_header.jade
+
+    include ./shared/_navbar.jade
+    
+    .shell.blue.dash-shell
+        #dash.anchor
+        .container
+            .row
+                // ---- First Column --------
+                .col-xs-24.col-sm-12.col-md-6
+                    
+                    // --------- WIFI ----------
+                    .panel.panel-default
+                        .panel-heading 
+                            h3 Wi-Fi Access &nbsp
+                                i.fa.fa-wifi
+                        .panel-body 
+                            p To access wifi, you will need to join one of the following.
+                        table.table
+                            tr
+                                td EDUROAM
+                                td  Preferred: You must have already set up EduRoam at your school for it to work here.
+                            tr
+                                td UNC PSK 
+                                td For this network, you must have registered your mac address with us. #[a(href="https://docs.google.com/forms/d/e/1FAIpQLSdzLjrFw_2xWJjXyYLy0YyQ33ivrzmE0ParwfasVRwR7Ug9Sg/viewform") Register my MAC].  Visit the Help Desk if you need help with this.
+                            tr
+                                td UNC Guest
+                                td Limited access.  Only has port 80 and 443 open. Bad for hacking.
+                    
+                    // ------- Help Desk ----------       
+                    .panel.panel-default 
+                        .panel-heading
+                            h3 Help Desk &nbsp
+                                i.fa.fa-question-circle
+                        .panel-body
+                            p For both technical and non-technical issues, The best place to get help from a HackNC organizer is the help desk.  See also: hotline.
+                            h4 Location:
+                            p <help desk location>
+
+                    // -------- Venue Map -------
+                    .panel.panel-default
+                        .panel-heading
+                            h3 Venue Map &nbsp
+                                i.fa.fa-map
+                        .panel-body
+                            img.centered(src="img/fetzer-map-2.png", width="100%")
+
+                    
+                    // ---------- Schedule -----
+                    .panel.panel-default 
+                        .panel-heading 
+                            h3 Schedule &nbsp
+                                i.fa.fa-calendar
+                        .panel-body
+                            p Stay in the know!  We will try to keep the site schedule current.
+                            a.btn.btn-success(role="button", href="/#schedule") View Schedule
+                
+                // ---- Second Column --------
+                .col-xs-24.col-sm-12.col-md-6                    
+                    // ---------- Mentors --------
+                    .panel.panel-default 
+                        .panel-heading
+                            h3 Mentors &nbsp
+                                i.fa.fa-users 
+                        .panel-body
+                            p Need help with your hack?  Stuck?  Need ideas?  Talk to a mentor!  This year, HackNC is using HelpQ.
+                            a.btn.btn-success(role="button", href="https://help.hacknc.com") Request a mentor!
+                    
+                    // -------- Devpost Submit -------
+                    .panel.panel-default
+                        .panel-heading
+                            h3 Prizes / Submissions &nbsp
+                                i.fa.fa-trophy
+                        .panel-body
+                            p Check out prizes and submit a hack for judging.  
+                            a.btn.btn-success(role="button", href="https://hacknc-2016.devpost.com/") View Devpost
+                    
+                    // ---------- Chat -------
+                    .panel.panel-default
+                        .panel-heading 
+                            h3 Chat &nbsp
+                                i.fa.fa-comments-o
+                        .panel-body 
+                            p To chat with your fellow hackers, the organizers, and mentors, hop onto our IRC channel.  To use a custom client, the connection details are below.  This chatroom is meant as a place to talk to chit-chat with everyone at the event.  If you have requests or issues from the HackNC Team, see the Hotline/Help Desk sections.
+                            a.btn.btn-success(role="button", href="/chat") Join #HackNC
+                        table.table
+                            tr
+                                td Host
+                                td irc.freenode.com
+                            tr
+                                td Channel
+                                td #HackNC
+
+                    
+                    // ----------- Hardware Lab -----
+                    .panel.panel-default 
+                        .panel-heading
+                            h3 Hardware Lab &nbsp
+                                i.fa.fa-laptop
+                        .panel-body
+                            p We have hardware! If you want to borrow something, head on over to the Hardware desk.
+                            h4 Location
+                            p <hardware desk location>
+
+
+                    // ---------- Hotline -----
+                    .panel.panel-default 
+                        .panel-heading 
+                            h3 Text Hotline &nbsp
+                                i.fa.fa-volume-control-phone
+                        .panel-body
+                            p You can send a text to this number any time!  Is it too cold?  Are the trash cans overflowing?  If there's something we should know about, shoot us a text.  An organizer will reply ASAP.
+                            .alert.alert-success(role="alert")
+                                strong Call or Text  
+                                | &nbsp&nbsp +1 (470) 242-4225
