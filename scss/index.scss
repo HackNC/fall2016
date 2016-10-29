@@ -444,5 +444,13 @@ a {
   }
 }
 
+.dash-shell{
+  .table {
+    td, th {
+      min-width: 140px;
+    }
+  }
+}
+
 @import 'mediaqueries';
 @import 'mailchimp';
